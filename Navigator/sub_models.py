@@ -1,13 +1,14 @@
 from Navigator.models import *
 
-from clases import *
-import sql
+
 import ntpath
 from shutil import copyfile
-import config
-import draw
-from bot_master import logging
 
+from Navigator.views import *
+from Navigator.bot_master import logging
+
+from Navigator.bot_master import pre_key,pre_path
+import random
 
 
 
@@ -17,7 +18,7 @@ class Building:
     @staticmethod
     def get_building():
         building = Building()
-        building.graph = get_graph()
+        building.graph = Graph.get_graph()
         building.floors = Instance.select()
         return building
 
@@ -53,11 +54,12 @@ class Path:
         self.weight = -1
 
 class WayBuilderClass:
-    building=None;
+    building=None
     paths = None
     dijkstra_weight = None
     dijkstra_connectons=None
     max_id = -1
+    key_val=1
 
     def __init__(self,building):
         logging.debug('init WB class')
@@ -178,16 +180,16 @@ class WayBuilderClass:
 
 
         for floor_id in path.floors:
-            old_picture_path[floor_id]=sql.get_instance_path_by_id(floor_id)
+            old_picture_path[floor_id]=Instance.get_instance_path_by_id(floor_id)
             #head, tail = ntpath.split(old_picture_path[floor_id])
-            new_picture_path[floor_id]=config.pre_path+config.pre_key+str(config.key)+'.jpg'
-            config.key+=1
+            new_picture_path[floor_id]=pre_path+pre_key+str(key_val)+'.jpg'
+            key_val+=1
             copyfile(old_picture_path[floor_id],new_picture_path[floor_id])
-            draw.redraw_picture(new_picture_path[floor_id],draw_points_dict_of_sequences[floor_id])
+            redraw_picture(new_picture_path[floor_id],draw_points_dict_of_sequences[floor_id])
 
         path.floors_obj={}
         for id in floors_set:
-            path.floors_obj[id]=sql.get_floor_by_id(id)
+            path.floors_obj[id]=Instance.get_instance_by_id(id)
             path.floors_obj[id].picture_path=new_picture_path[id]
         #copyfile(src, dst)
 

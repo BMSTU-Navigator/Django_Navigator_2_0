@@ -2,13 +2,14 @@
 
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
-
+from Navigator.sub_models import Building,Graph,WayBuilderClass
+from Navigator.models import Dialogs,Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
 
 import logging
 import time
 
-key=1
+key_val=1
 pre_key='tmp_pic'
 pre_path='/home/alexdark/'
 
@@ -32,7 +33,7 @@ logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
 
 
-class Bot:
+class BotChild:
     bot_id=-1
     dialog_id=-1;
     dialog_state=-1
@@ -41,11 +42,6 @@ class Bot:
 
     building = None
     wb = None
-
-
-
-
-
 
     from_id=-1
     to_id=-1
@@ -60,7 +56,7 @@ class Bot:
         self.bot_id=id
         logging.debug('init bot '+str(id))
         logging.debug('request building')
-        self.building = get_building()
+        self.building = Building.get_building()
         logging.debug('init WB class')
         self.wb = WayBuilderClass(self.building)
         logging.debug('config wb')
@@ -74,35 +70,36 @@ class Bot:
         logging.debug('bot in  state ' + str(self.dialog_state))
 
         if self.dialog_state==0:
-            self.send_message(sql.get_dialog_item(0,1))
+            self.send_message(Dialogs.get_dialog_item(0, 1))
+            self.send_message(Dialogs.get_dialog_item(0,1))
             self.dialog_state=1
             return
 
         if self.dialog_state==1:
             if int(input_string) in (1,3):
                 self.dialog_style=int(input_string)
-                self.send_message(sql.get_dialog_item(1,self.dialog_style))
-                self.send_message(sql.get_dialog_item(2,self.dialog_style))
-                self.send_message(sql.get_dialog_item(3,self.dialog_style))
+                self.send_message(Dialogs.get_dialog_item(1,self.dialog_style))
+                self.send_message(Dialogs.get_dialog_item(2,self.dialog_style))
+                self.send_message(Dialogs.get_dialog_item(3,self.dialog_style))
                 self.send_photo('all.jpeg')
-                self.send_message(sql.get_dialog_item(4, self.dialog_style))
+                self.send_message(Dialogs.get_dialog_item(4, self.dialog_style))
                 self.dialog_state=2
             else:
-                self.send_message(sql.get_dialog_item(5, self.dialog_style))
+                self.send_message(Dialogs.get_dialog_item(5, self.dialog_style))
             return
 
 
         if self.dialog_state==2:
-            self.from_id = get_id(input_string)
-            self.send_message(sql.get_dialog_item(6,self.dialog_style))
-            self.send_message(sql.get_dialog_item(7, self.dialog_style))
+            self.from_id = Point.get_id(input_string)
+            self.send_message(Dialogs.get_dialog_item(6,self.dialog_style))
+            self.send_message(Dialogs.get_dialog_item(7, self.dialog_style))
             self.dialog_state=3
             return
 
         if self.dialog_state==3:
-            self.to_id = get_id(input_string)
-            self.send_message(sql.get_dialog_item(8,self.dialog_style))
-            self.send_message(sql.get_dialog_item(9, self.dialog_style))
+            self.to_id = Point.get_id(input_string)
+            self.send_message(Dialogs.get_dialog_item(8,self.dialog_style))
+            self.send_message(Dialogs.get_dialog_item(9, self.dialog_style))
             self.dialog_state=4
             return
 
@@ -123,12 +120,10 @@ class Bot:
     def send_message(self, text):
         logging.debug('bot ' + str(self.bot_id)+' sending text:'+text)
         self.telebot.send_message(self.dialog_id,
-                                  text)  # + '  answer of bot '+str(self.bot_id) +'  chat_id='+ str(self.dialog_id))
+                                  text)
     def send_photo(self, path):
         logging.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
-        #self.telebot.send_message(self.dialog_id, '+')
         self.telebot.send_photo(self.dialog_id, open(path, 'rb'))
-        #self.telebot.send_message(self.dialog_id, '+')
 
 
 
@@ -145,14 +140,14 @@ print('start')
 logging.debug('start')
 
 def echo(bot, update):
-    if message.chat.id not in id_list:
-        id_list.append(message.chat.id)
-        tmp_bot=Bot(bot,message.chat.id,len(id_list))
+    if update.message.chat.id not in id_list:
+        id_list.append(update.message.chat.id)
+        tmp_bot=BotChild(bot, update.message.chat.id, len(id_list))
 
-        bots[message.chat.id]=tmp_bot
+        bots[update.message.chat.id]=tmp_bot
         tmp_bot=None
 
-    bots[message.chat.id].get_answer(message.text)
+    bots[update.message.chat.id].get_answer(update.message.text)
 
 def command(bot, update):
     #echo a command
