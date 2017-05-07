@@ -43,8 +43,8 @@ class Point(models.Model):
 
 
 class GraphConnection(models.Model):
-    point1 = models.ForeignKey(Point,verbose_name='point1',null=False)                 # указатель на поинт 1
-    point2 = models.ForeignKey(Point,verbose_name='point2',null=False)                 #указатель на поит 2
+    point1 = models.ForeignKey(Point,related_name='point1',null=False)                 # указатель на поинт 1
+    point2 = models.ForeignKey(Point,related_name='point2',null=False)                 #указатель на поит 2
     connection_weight = models.IntegerField(default=0)      # вес соедиения
     connection_comment = models.CharField(max_length=255,default=None)        # коментарий соединения
     path = models.CharField(max_length=255,default=None)              # путь к картинке соединения
