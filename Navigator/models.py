@@ -29,7 +29,7 @@ class Point(models.Model):
     path = models.CharField(max_length=255,default=None)    #путь к картинке
     x = models.IntegerField(default=0)                  #координата х на карте инстанса
     y = models.IntegerField(default=0)                  #координата у на карте инстанса
-
+    hidden=models.BooleanField(default=False)
     @staticmethod
     def get_id(string):
         return (Point.get(Point.name == string)).id
