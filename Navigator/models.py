@@ -5,11 +5,20 @@ from django.db import models
 
 """получить код поинта по его нзвнию
     нужно обвесить эксепшеном
-
 """
 
 
+class Instance(models.Model):
+    path = models.CharField(max_length=255,default=None)   #
 
+    @staticmethod
+    def get_instance_path_by_id(id):
+        tmp = (Instance.get(Instance.id == id)).picture_path
+        return tmp
+
+    @staticmethod
+    def get_instance_by_id(id):
+        return Instance.get(Instance.id == id)
 
 
 
@@ -31,17 +40,7 @@ class Point(models.Model):
     инстансом
     ИНСТАНС - фрагмент местности внутри здания (кусок циркуля, часть этажа)
     """
-class Instance(models.Model):
-    path = models.CharField(max_length=255,default=None)   #
 
-    @staticmethod
-    def get_instance_path_by_id(id):
-        tmp = (Instance.get(Instance.id == id)).picture_path
-        return tmp
-
-    @staticmethod
-    def get_instance_by_id(id):
-        return Instance.get(Instance.id == id)
 
 class GraphConnection(models.Model):
     point1 = models.ForeignKey(Point,verbose_name='point1',null=False)                 # указатель на поинт 1
