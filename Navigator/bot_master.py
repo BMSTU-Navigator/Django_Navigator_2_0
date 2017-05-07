@@ -6,7 +6,7 @@ from Navigator.sub_models import Building,Graph,WayBuilderClass
 from Navigator.models import Dialogs,Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
 
-import logging
+
 import time
 
 key_val=1
@@ -23,11 +23,11 @@ bots={}
 
 
 
-logging.basicConfig(filename='example.log',level=logging.DEBUG)
-#logging example
-#logging.debug('This message should go to the log file')
-#logging.info('So should this')
-#logging.warning('And this, too')
+##logging.basicConfig(filename='example.log',level=#logging.DEBUG)
+##logging example
+##logging.debug('This message should go to the log file')
+##logging.info('So should this')
+##logging.warning('And this, too')
 
 
 
@@ -54,20 +54,20 @@ class BotChild:
         self.dialog_state=0
         self.dialog_style=1
         self.bot_id=id
-        logging.debug('init bot '+str(id))
-        logging.debug('request building')
+        #logging.debug('init bot '+str(id))
+        #logging.debug('request building')
         self.building = Building.get_building()
-        logging.debug('init WB class')
+        #logging.debug('init WB class')
         self.wb = WayBuilderClass(self.building)
-        logging.debug('config wb')
+        #logging.debug('config wb')
         self.wb.init_pre_count()
 
 
     def get_answer(self,input_string):
 
-        logging.debug('request amswer from bot '+str(self.bot_id))
-        logging.debug('request by string '+input_string)
-        logging.debug('bot in  state ' + str(self.dialog_state))
+        #logging.debug('request amswer from bot '+str(self.bot_id))
+        #logging.debug('request by string '+input_string)
+        #logging.debug('bot in  state ' + str(self.dialog_state))
 
         if self.dialog_state==0:
             self.send_message(Dialogs.get_dialog_item(0, 1))
@@ -118,11 +118,11 @@ class BotChild:
             return
 
     def send_message(self, text):
-        logging.debug('bot ' + str(self.bot_id)+' sending text:'+text)
+        #logging.debug('bot ' + str(self.bot_id)+' sending text:'+text)
         self.telebot.send_message(self.dialog_id,
                                   text)
     def send_photo(self, path):
-        logging.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
+        #logging.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
         self.telebot.send_photo(self.dialog_id, open(path, 'rb'))
 
 
@@ -137,7 +137,7 @@ class BotChild:
 
 
 print('start')
-logging.debug('start')
+#logging.debug('start')
 
 def echo(bot, update):
     if update.message.chat.id not in id_list:
