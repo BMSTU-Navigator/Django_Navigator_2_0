@@ -22,7 +22,7 @@ id_list=[]
 bots={}
 
 
-
+#comment logging
 ##logging.basicConfig(filename='example.log',level=#logging.DEBUG)
 ##logging example
 ##logging.debug('This message should go to the log file')
