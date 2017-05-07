@@ -48,7 +48,7 @@ class BotChild:
     detalization_level=2
 
 
-    def __init__(self,telebot,dialog_id,id):
+    def __init__(self,telebot,dialog_id,id,way_builder_instance):
         self.telebot=telebot
         self.dialog_id=dialog_id
         self.dialog_state=0
@@ -56,9 +56,9 @@ class BotChild:
         self.bot_id=id
         #logging.debug('init bot '+str(id))
         #logging.debug('request building')
-        self.building = Building.get_building()
+        #self.building = Building.get_building()
         #logging.debug('init WB class')
-        self.wb = WayBuilderClass(self.building)
+        self.wb = way_builder_instance
         #logging.debug('config wb')
         self.wb.init_pre_count()
 
@@ -138,6 +138,11 @@ class BotChild:
 
 print('start')
 #logging.debug('start')
+
+
+building = Building.get_building()
+#logging.debug('init WB class')
+main_way_builder_instance = WayBuilderClass(building)
 
 def echo(bot, update):
     if update.message.chat.id not in id_list:
