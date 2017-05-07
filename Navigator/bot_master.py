@@ -1,15 +1,17 @@
 #https://groosha.gitbooks.io/telegram-bot-lessons/content/chapter1.h
 
 
-from telebot import TeleBot
-from bot import *
-import logging
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
+
+import logging
+import time
 
 key=1
 pre_key='tmp_pic'
 pre_path='/home/alexdark/'
-token = '333359292:AAGf_E6lYBiojMkuyfxW1wefq65D9f2QAss'
+
 
 
 
@@ -27,23 +29,6 @@ logging.basicConfig(filename='example.log',level=logging.DEBUG)
 #logging.warning('And this, too')
 
 
-print('start')
-logging.debug('start')
-bot = TeleBot(config.token)
-logging.debug('sucsess start')
-print('sucsess start')
-
-
-@bot.message_handler(content_types=["text"])
-def repeat_all_messages(message): # Название функции не играет никакой роли, в принципе
-    if message.chat.id not in id_list:
-        id_list.append(message.chat.id)
-        tmp_bot=Bot(bot,message.chat.id,len(id_list))
-
-        bots[message.chat.id]=tmp_bot
-        tmp_bot=None
-
-    bots[message.chat.id].get_answer(message.text)
 
 
 
@@ -144,3 +129,68 @@ class Bot:
         #self.telebot.send_message(self.dialog_id, '+')
         self.telebot.send_photo(self.dialog_id, open(path, 'rb'))
         #self.telebot.send_message(self.dialog_id, '+')
+
+
+
+
+
+
+
+
+
+
+
+
+print('start')
+logging.debug('start')
+
+def echo(bot, update):
+    if message.chat.id not in id_list:
+        id_list.append(message.chat.id)
+        tmp_bot=Bot(bot,message.chat.id,len(id_list))
+
+        bots[message.chat.id]=tmp_bot
+        tmp_bot=None
+
+    bots[message.chat.id].get_answer(message.text)
+
+def command(bot, update):
+    #echo a command
+    bot.send_message(text='received command:'+update.message.text,chat_id=update.message.chat_id)
+
+def error(bot,updater):
+    pass #handle error
+
+def work_cycle():
+    try:
+        updater.start_polling()
+        time.sleep(10)
+    except Exception as ex:
+        print('bot crashed:')
+        work_cycle()
+
+
+command_handler = MessageHandler(Filters.command, command)
+echo_handler = MessageHandler(Filters.text, echo)
+updater = Updater(token='333359292:AAGf_E6lYBiojMkuyfxW1wefq65D9f2QAss')
+
+dispatcher = updater.dispatcher
+dispatcher.add_handler(command_handler)
+dispatcher.add_error_handler(error)
+dispatcher.add_handler(echo_handler)
+
+#updater.dispatcher.add_handler(CallbackQueryHandler(button)) #for message inline
+
+while True:
+    print('new poling')
+    try:
+        updater.start_polling()
+        time.sleep(10)
+    except Exception as ex:
+        print('bot crashed:')
+
+
+
+
+
+
