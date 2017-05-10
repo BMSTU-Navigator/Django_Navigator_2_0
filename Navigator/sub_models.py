@@ -18,7 +18,7 @@ class Building:
     def get_building():
         building = Building()
         building.graph = Graph.get_graph()
-        building.floors = Instance.select()
+        building.floors = Instance.objects.filter()
         return building
 
 
@@ -34,8 +34,8 @@ class Graph:
     @staticmethod
     def get_graph():
         graph = Graph()
-        graph.connections = GraphConnection.select()
-        graph.points = Point.select()
+        graph.connections = GraphConnection.objects.filter()
+        graph.points = Point.objects.filter()
         graph.points_dict = {}
         for point in graph.points:
             graph.points_dict[point.id] = point
@@ -166,7 +166,6 @@ class WayBuilderClass:
         print(path.weight)
         # logging.debug(path.weight)
 
-
         # нужен рерайтер картинок
         old_picture_path = {}
         new_picture_path = {}
@@ -191,9 +190,5 @@ class WayBuilderClass:
             path.floors_obj[id] = Instance.get_instance_by_id(id)
             path.floors_obj[id].picture_path = new_picture_path[id]
         # copyfile(src, dst)
-
-
-
-
         # logging.debug('return path')
         return path
