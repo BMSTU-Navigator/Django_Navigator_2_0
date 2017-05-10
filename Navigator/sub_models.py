@@ -2,11 +2,8 @@ from Navigator.models import *
 
 import ntpath
 from shutil import copyfile
-
 from Navigator.views import *
-# from Navigator.bot_master import #logging
-
-# from Navigator.bot_master import pre_key,pre_path
+from Navigator.bot_master import logging
 import random
 
 
@@ -68,7 +65,7 @@ class WayBuilderClass:
 
 
     def __init__(self, building):
-        # logging.debug('init WB class')
+        logging.debug('init WB class')
         # logging.debug('request building')
         self.building = building
         # logging.debug('pre count')

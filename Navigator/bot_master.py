@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from Navigator.sub_models import Building, Graph, WayBuilderClass
 from Navigator.models import Dialogs, Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
-
+import logging
 import time
 
 key_val = 1
@@ -18,7 +18,7 @@ bots = {}
 
 
 # comment logging
-# logging.basicConfig(filename='example.log',level=#logging.DEBUG)
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
 # logging example
 # logging.debug('This message should go to the log file')
 # logging.info('So should this')
