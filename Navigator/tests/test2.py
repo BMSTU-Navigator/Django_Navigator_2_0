@@ -1,17 +1,19 @@
 import unittest
-from clases import *
-from sql import *
-from way_builder_class import *
+from Navigator.views import *
+from Navigator.models import *
+from Navigator.sub_models import *
 
 
 
 class FloorCheck(unittest.TestCase):
     def test_dialog(self):
-        building = get_building()
+        building = Building.get_building()
         wb = WayBuilderClass(building)
         wb.init_pre_count()
-        path = wb.request_path(get_id('11'), get_id('25'))
+        path = wb.request_path(Point.get_id('101'), Point.get_id('112'))
         print('pre first assert')
+
+
         self.assertEquals(path.floors, [1, 2])
 
         ids_mas=[]

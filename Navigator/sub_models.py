@@ -3,7 +3,7 @@ from Navigator.models import *
 import ntpath
 from shutil import copyfile
 from Navigator.views import *
-from Navigator.bot_master import logging
+#from Navigator.bot_master import logging
 import random
 
 
@@ -65,7 +65,7 @@ class WayBuilderClass:
 
 
     def __init__(self, building):
-        logging.debug('init WB class')
+        #logging.debug('init WB class')
         # logging.debug('request building')
         self.building = building
         # logging.debug('pre count')
@@ -81,7 +81,7 @@ class WayBuilderClass:
         for i in range(self.max_id):
             self.dijkstra_weight.append([10000] * self.max_id)
         for conection in self.building.graph.connections:
-            self.dijkstra_weight[conection.point1][conection.point2] = conection.connection_weight
+            self.dijkstra_weight[conection.point1.id][conection.point2.id] = conection.connection_weight
 
     def dijkstra(self, start, stop):
         # logging.debug('dekstra start:'+str(start)+' stop:'+str(stop))
@@ -148,12 +148,12 @@ class WayBuilderClass:
 
         for i in range(0, len(path.points) - 1):
             for connection in self.building.graph.connections:
-                if connection.point1 == path.points[i].id and connection.point2 == path.points[i + 1].id:
+                if connection.point1.id == path.points[i].id and connection.point2.id == path.points[i + 1].id:
                     path.connections.append(connection)
 
         floors_set = set()
         for point in path.points:
-            floors_set.add(point.floor_index)
+            floors_set.add(point.floor.id)
 
         for floor in floors_set:
             path.floors.append(floor)
@@ -167,7 +167,7 @@ class WayBuilderClass:
         old_picture_path = {}
         new_picture_path = {}
         draw_points_dict_of_sequences = {}
-
+        return path
         for id in path.floors:
             draw_points_dict_of_sequences[id] = []
 

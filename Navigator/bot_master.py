@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from Navigator.sub_models import Building, Graph, WayBuilderClass
 from Navigator.models import Dialogs, Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
-import logging
+#import logging
 import time
 
 key_val = 1
@@ -18,7 +18,7 @@ bots = {}
 
 
 # comment logging
-logging.basicConfig(filename='example.log',level=logging.DEBUG)
+#logging.basicConfig(filename='example.log',level=logging.DEBUG)
 # logging example
 # logging.debug('This message should go to the log file')
 # logging.info('So should this')
@@ -61,7 +61,7 @@ class BotChild:
 
         if self.dialog_state == 0:
             self.send_message(Dialogs.get_dialog_item(0, 1))
-            self.send_message(Dialogs.get_dialog_item(0, 1))
+            #self.send_message(Dialogs.get_dialog_item(8, 1))
             self.dialog_state = 1
             return
 
@@ -71,7 +71,7 @@ class BotChild:
                 self.send_message(Dialogs.get_dialog_item(1, self.dialog_style))
                 self.send_message(Dialogs.get_dialog_item(2, self.dialog_style))
                 self.send_message(Dialogs.get_dialog_item(3, self.dialog_style))
-                self.send_photo('all.jpeg')
+                #self.send_photo('all.jpeg')
                 self.send_message(Dialogs.get_dialog_item(4, self.dialog_style))
                 self.dialog_state = 2
             else:
@@ -81,14 +81,14 @@ class BotChild:
         if self.dialog_state == 2:
             self.from_id = Point.get_id(input_string)
             self.send_message(Dialogs.get_dialog_item(6, self.dialog_style))
-            self.send_message(Dialogs.get_dialog_item(7, self.dialog_style))
+            #self.send_message(Dialogs.get_dialog_item(7, self.dialog_style))
             self.dialog_state = 3
             return
 
         if self.dialog_state == 3:
             self.to_id = Point.get_id(input_string)
+            self.send_message(Dialogs.get_dialog_item(7, self.dialog_style))
             self.send_message(Dialogs.get_dialog_item(8, self.dialog_style))
-            self.send_message(Dialogs.get_dialog_item(9, self.dialog_style))
             self.dialog_state = 4
             return
 
@@ -137,7 +137,8 @@ def echo(bot, update):
 
 def command(bot, update):
     # echo a command
-    bot.send_message(text='received command:' + update.message.text, chat_id=update.message.chat_id)
+    path=main_way_builder_instance.request_path(Point.get_id('101'), Point.get_id('112'))
+    bot.send_message(text='received command:' + update.message.text, chat_id=update.message.chat_id,disable_web_page_preview=True)
 
 
 def error(bot, updater):
