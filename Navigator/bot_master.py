@@ -342,7 +342,8 @@ class BotChild:
 
                 message=''
                 for i in range(len(path.points)):
-                    message+='\n'+path.points[i].name
+                    if not path.points[i].hidden:
+                        message+='\n'+path.points[i].name
 
                     if i < len(path.connections):
                         message += '\n' + str(path.connections[i].connection_comment)
