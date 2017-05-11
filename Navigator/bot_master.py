@@ -17,11 +17,14 @@ id_counter = 0
 id_list = []
 bots = {}
 
+from Navigator.logger import log
 
-import logging
-logging.basicConfig(filename='ex.log',level=logging.DEBUG)
-logger = logging.getLogger('lg')
-logger.debug('test')
+log('test from botmaster')
+
+#import logging
+#logging.basicConfig(filename='ex.log',level=logging.DEBUG)
+#logger = logging.getLogger('lg')
+#logger.debug('test')
 
 
 class BotChild_oldold:
@@ -421,7 +424,7 @@ def echo(bot, update):
     if update.message.chat.id not in id_list:
         id_list.append(update.message.chat.id)
         tmp_bot = BotChild(bot, update.message.chat.id, len(id_list), main_way_builder_instance)
-        tmp_bot.logger=logger
+        #tmp_bot.logger=logger
         bots[update.message.chat.id] = tmp_bot
 
     bots[update.message.chat.id].get_answer(update.message.text)
