@@ -586,7 +586,6 @@ def echo(bot, update):
     text=update.message.text
 
     BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
-    BotChild_super.send_message_with_keyboard(bot, TelegramUser.get_user(update.message.chat), 'get style', BotChild_super.get_keyboard_for_change_style())
 
 
 from Navigator.models import TelegramUser
@@ -596,6 +595,9 @@ def command(bot, update):
     if update.message.text == '/start':
         TelegramUser.add_telegram_user(update.message.chat)
         bot.send_message(text='you are registered:', chat_id=update.message.chat_id, disable_web_page_preview=True)
+        BotChild_super.send_message_with_keyboard(bot, TelegramUser.get_user(update.message.chat), 'get style',
+                                                  BotChild_super.get_keyboard_for_change_style())
+
     else:
         bot.send_message(text='received uncnown command:' + update.message.text, chat_id=update.message.chat_id,
                          disable_web_page_preview=True)

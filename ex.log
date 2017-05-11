@@ -980,3 +980,86 @@ DEBUG:telegram.ext.dispatcher:Dispatcher started
 DEBUG:telegram.bot:True
 DEBUG:telegram.bot:Exiting: setWebhook
 DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049f10f0>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049f0198>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
