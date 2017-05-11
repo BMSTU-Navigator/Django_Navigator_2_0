@@ -648,7 +648,7 @@ dispatcher.add_handler(echo_handler)
 
 
 
-work_cycle()
+#work_cycle()
 #
 # while True:
 #    print('new poling')
