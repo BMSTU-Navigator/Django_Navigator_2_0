@@ -451,7 +451,7 @@ updater = Updater(token='333359292:AAGf_E6lYBiojMkuyfxW1wefq65D9f2QAss')
 
 dispatcher = updater.dispatcher
 dispatcher.add_handler(command_handler)
-dispatcher.add_error_handler(error)
+#dispatcher.add_error_handler(error)
 dispatcher.add_handler(echo_handler)
 
 # updater.dispatcher.add_handler(CallbackQueryHandler(button)) #for message inline
