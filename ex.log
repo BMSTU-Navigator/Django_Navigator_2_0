@@ -1,5 +1,9 @@
+DEBUG:lg:setup
+DEBUG:lg:setup
+DEBUG:lg:setup
 DEBUG:lg:test
-DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049e0dd8>
+DEBUG:lg2:test2
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104adff28>
 DEBUG:JobQueue:JobQueue thread started
 DEBUG:telegram.ext.updater:dispatcher - started
 DEBUG:telegram.ext.updater:updater - started
@@ -9,8 +13,12 @@ DEBUG:telegram.ext.dispatcher:Dispatcher started
 DEBUG:telegram.bot:True
 DEBUG:telegram.bot:Exiting: setWebhook
 DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
 DEBUG:lg:test
-DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1046c9940>
+DEBUG:lg2:test2
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049e5f28>
 DEBUG:JobQueue:JobQueue thread started
 DEBUG:telegram.ext.updater:dispatcher - started
 DEBUG:telegram.ext.updater:updater - started
@@ -20,7 +28,171 @@ DEBUG:telegram.ext.dispatcher:Dispatcher started
 DEBUG:telegram.bot:True
 DEBUG:telegram.bot:Exiting: setWebhook
 DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:No new updates found.
-DEBUG:telegram.bot:[]
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [47177996]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10460f7f0>]
 DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'F', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513224, 'from': {'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'type': '', 'id': 262000141}, 'migrate_from_chat_id': 0, 'message_id': 2317, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}, 'update_id': 47177996}
+DEBUG:telegram.bot:Entering: getMe
+DEBUG:telegram.bot:{'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}
+DEBUG:telegram.bot:Exiting: getMe
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'get style', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513230, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2324, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [47178001]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049a59b0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'F', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513237, 'from': {'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'type': '', 'id': 262000141}, 'migrate_from_chat_id': 0, 'message_id': 2329, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}, 'update_id': 47178001}
+DEBUG:telegram.bot:Entering: sendMessage
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'change is registered', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513237, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2330, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'greet', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513237, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2331, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [47178008]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10460fa20>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'NW', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513323, 'from': {'first_name': 'Fedor', 'last_name': 'Gubarev', 'username': '', 'type': '', 'id': 375653167}, 'migrate_from_chat_id': 0, 'message_id': 2345, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}, 'update_id': 47178008}
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'ask for route point 1', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513324, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2346, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [47178009]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1033b4898>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '102', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513337, 'from': {'first_name': 'Fedor', 'last_name': 'Gubarev', 'username': '', 'type': '', 'id': 375653167}, 'migrate_from_chat_id': 0, 'message_id': 2347, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}, 'update_id': 47178009}
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'point1 - ok', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513337, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2348, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'ask for 2nd point', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513337, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2349, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [47178010]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10460f518>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '205', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513344, 'from': {'first_name': 'Fedor', 'last_name': 'Gubarev', 'username': '', 'type': '', 'id': 375653167}, 'migrate_from_chat_id': 0, 'message_id': 2350, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}, 'update_id': 47178010}
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'point2 - ok', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513345, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2351, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'wait for route', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513345, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2353, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '102\nвыходи из аудитории\nмежду 102 и 111\nв сторону прохода\nмимо 103\nк Т-образному перекрестку\nповерни направо\nтеперь прямо\nмимо 106\nв сторону лестницы\nмежду 104 и 105\nНа лестницу!\nЛ-1-1\nвверх на 1 этаж', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513345, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2354, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendPhoto
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513348, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2355, 'caption': '', 'photo': [{'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABMQVzzRkT5NSy0EIAAEC', 'file_size': 1461, 'width': 90, 'height': 87}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABEpV82Pez3vazEEIAAEC', 'file_size': 15907, 'width': 320, 'height': 310}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABL7FDDTujh9PykEIAAEC', 'file_size': 56563, 'width': 800, 'height': 774}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABAxan9LkRgg5yUEIAAEC', 'file_size': 112388, 'width': 1280, 'height': 1239}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABKkcmTYLKKD0yEEIAAEC', 'file_size': 98791, 'width': 1312, 'height': 1270}], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendPhoto
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Л-2-1\nСходи с тестницы\nмежду 204 и 205\nЗаходи\n205', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513348, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2356, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendPhoto
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513351, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2357, 'caption': '', 'photo': [{'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABIrRhMljjHkNFzkIAAEC', 'file_size': 1397, 'width': 90, 'height': 87}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABIK4oT6iBE44GDkIAAEC', 'file_size': 15366, 'width': 320, 'height': 310}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABBviHAHzt7ENGTkIAAEC', 'file_size': 56270, 'width': 800, 'height': 774}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABIRRW5EN8lX3FjkIAAEC', 'file_size': 111869, 'width': 1280, 'height': 1239}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABLHsJXVXgXd9FTkIAAEC', 'file_size': 98866, 'width': 1312, 'height': 1270}], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendPhoto
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'going to wait state', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513351, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2358, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.bot:Entering: getUpdates
+ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)

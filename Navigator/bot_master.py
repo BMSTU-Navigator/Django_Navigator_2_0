@@ -17,14 +17,14 @@ id_counter = 0
 id_list = []
 bots = {}
 
-from Navigator.logger import log
 
-log('test from botmaster')
 
-#import logging
-#logging.basicConfig(filename='ex.log',level=logging.DEBUG)
-#logger = logging.getLogger('lg')
-#logger.debug('test')
+import logging
+logging.basicConfig(filename='ex.log',level=logging.DEBUG)
+logger = logging.getLogger('lg')
+logger2 = logging.getLogger('lg2')
+logger.debug('test')
+logger2.debug('test2')
 
 
 class BotChild_oldold:
@@ -345,12 +345,13 @@ class BotChild:
 
                 message=''
                 for i in range(len(path.points)):
-                    if not path.points[i].hidden:
-                        message+='\n'+path.points[i].name
+                    #if not path.points[i].hidden:
+                    #    message+='\n'+path.points[i].name
 
                     if i < len(path.connections):
                         message += '\n' + str(path.connections[i].connection_comment)
-
+                        if not path.points[i].hidden:
+                            message +=path.points[i].name
                         if path.connections[i].trans_instance_marker:
                             self.send_message(message)
                             pic_path = path.floors_obj[prev_inst_id].picture_path
