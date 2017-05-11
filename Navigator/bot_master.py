@@ -373,10 +373,12 @@ class BotChild:
                 if input_string=='CS':
                     self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
                     self.dialog_state = 1
+                    return
                 if input_string=='NW':
                     self.send_message('ask for route point 1')
                     #self.send_message('change keyboard to new way change style')
                     self.dialog_state = 2
+                    return
 
             else:
                 self.send_message('dont understand')
