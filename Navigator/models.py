@@ -17,6 +17,8 @@ class Instance(models.Model):
     def get_instance_by_id(id):
         return Instance.objects.get(id=id)
 
+    def __str__(self):
+        return self.id
 
 """поинт - место на карте (кабинет, лвход на лестницу итд)"""
 
@@ -29,6 +31,8 @@ class Point(models.Model):
     y = models.IntegerField(default=0)  # координата у на карте инстанса
     hidden = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.name
     @staticmethod
     def get_id(string):
         try:
@@ -53,7 +57,8 @@ class GraphConnection(models.Model):
     instance = models.ForeignKey(Instance, null=True)  # указатель на инстанс если соединение внутри одного инстанса
     trans_instance_marker = models.BooleanField(
         default=False)  # маркер того что поинты входящие в соединение находятся в разных инстансах
-
+    def __str__(self):
+        return 'pint1='+str(self.point1.id)+' point2='+str(self.point2.id)
 
 """ таблица диалогов с тремя стилями
 1й стиль - официальный
@@ -78,6 +83,8 @@ class Dialogs(models.Model):  #
         if style == 2: return Dialogs.objects.get(id=id).style2
         if style == 3: return Dialogs.objects.get(id=id).style3
 
+    def __str__(self):
+        return 'style1='+str(self.style1)
         # Instance.create_table(True)
         # Point.create_table(True)
         # GraphConnection.create_table(True)
@@ -109,3 +116,6 @@ class TelegramUser(models.Model):
     @staticmethod
     def get_user(chat):
         return TelegramUser.objects.get(user_telegram_id=chat['id'])
+
+    def __str__(self):
+        return str(self.username)

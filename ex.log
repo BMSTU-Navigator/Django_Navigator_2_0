@@ -1063,3 +1063,755 @@ DEBUG:telegram.ext.dispatcher:Dispatcher started
 DEBUG:telegram.bot:True
 DEBUG:telegram.bot:Exiting: setWebhook
 DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049b0160>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [113002373]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x104600940>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'supergroup_chat_created': False, 'group_chat_created': False, 'migrate_from_chat_id': 0, 'from': {'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'id': 262000141, 'type': ''}, 'new_chat_photo': [], 'migrate_to_chat_id': 0, 'chat': {'username': 'AlexDark', 'id': 262000141, 'all_members_are_admins': False, 'title': '', 'first_name': 'AlexDark', 'last_name': '', 'type': 'private'}, 'channel_chat_created': False, 'delete_chat_photo': False, 'caption': '', 'photo': [], 'entities': [{'length': 6, 'offset': 0, 'type': 'bot_command'}], 'message_id': 124, 'date': 1494519505, 'new_chat_title': '', 'text': '/start'}, 'update_id': 113002373}
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'supergroup_chat_created': False, 'group_chat_created': False, 'migrate_from_chat_id': 0, 'from': {'first_name': 'pokaxzbot', 'last_name': '', 'username': 'pokaxz_bot', 'id': 362627334, 'type': ''}, 'new_chat_photo': [], 'migrate_to_chat_id': 0, 'chat': {'username': 'AlexDark', 'id': 262000141, 'all_members_are_admins': False, 'title': '', 'first_name': 'AlexDark', 'last_name': '', 'type': 'private'}, 'channel_chat_created': False, 'delete_chat_photo': False, 'caption': '', 'photo': [], 'entities': [], 'message_id': 125, 'date': 1494519506, 'new_chat_title': '', 'text': 'you are registered:'}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'supergroup_chat_created': False, 'group_chat_created': False, 'migrate_from_chat_id': 0, 'from': {'first_name': 'pokaxzbot', 'last_name': '', 'username': 'pokaxz_bot', 'id': 362627334, 'type': ''}, 'new_chat_photo': [], 'migrate_to_chat_id': 0, 'chat': {'username': 'AlexDark', 'id': 262000141, 'all_members_are_admins': False, 'title': '', 'first_name': 'AlexDark', 'last_name': '', 'type': 'private'}, 'channel_chat_created': False, 'delete_chat_photo': False, 'caption': '', 'photo': [], 'entities': [], 'message_id': 126, 'date': 1494519507, 'new_chat_title': '', 'text': 'get style'}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x10465c860>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104598ac8>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1046dbba8>
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /login
+WARNING:django.request:Not Found: /admin/register
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104654b00>
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1046a03c8>
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1047a7278>
