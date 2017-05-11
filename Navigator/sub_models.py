@@ -1,6 +1,7 @@
 from Navigator.models import *
 
 import ntpath
+import logging
 from shutil import copyfile
 from Navigator.views import *
 #from Navigator.bot_master import logging
@@ -62,13 +63,14 @@ class WayBuilderClass:
     key_val = 1
     pre_key = 'tmp_pic'
     pre_path = './pic_dir/tmp_pic_dir/'
-
+    logger=None
 
     def __init__(self, building):
-        #logging.debug('init WB class')
-        # logging.debug('request building')
+        self.logger=logging.getLogger('WayBuilder')
+        self.logger.debug('init WB class')
+        self.logger.debug('request building')
         self.building = building
-        # logging.debug('pre count')
+        self.logger.debug('pre count')
         self.init_pre_count()
         return
 
@@ -84,7 +86,7 @@ class WayBuilderClass:
             self.dijkstra_weight[conection.point1.id][conection.point2.id] = conection.connection_weight
 
     def dijkstra(self, start, stop):
-        # logging.debug('dekstra start:'+str(start)+' stop:'+str(stop))
+        self.logger.debug('dekstra start:'+str(start)+' stop:'+str(stop))
         self.dijkstra_connectons = []
         for i in range(0, len(self.dijkstra_weight)):
             self.dijkstra_connectons.append([])
@@ -93,7 +95,7 @@ class WayBuilderClass:
                     self.dijkstra_connectons[i].append(j)
 
         print(self.dijkstra_connectons)
-        # logging.debug(self.dijkstra_connectons)
+        self.logger.debug(self.dijkstra_connectons)
         size = self.max_id
         INF = 10 ** 10
 
@@ -129,14 +131,14 @@ class WayBuilderClass:
         return sum
 
     def request_path(self, start, stop):
-        # logging.debug('start request path start:'+str(start)+' stop:'+str(stop))
+        self.logger.debug('start request path start:'+str(start)+' stop:'+str(stop))
         weight = self.dijkstra(start, stop)
         print(self.paths)
 
         path = Path()
         path.clearr()
         print(Path.floors)
-        # logging.debug(Path.floors)
+        self.logger.debug(Path.floors)
 
         path.weight = weight
 
@@ -159,9 +161,9 @@ class WayBuilderClass:
             path.floors.append(floor)
 
         print(path.floors)
-        # logging.debug(path.floors)
+        self.logger.debug(path.floors)
         print(path.weight)
-        # logging.debug(path.weight)
+        self.logger.debug(path.weight)
 
         # нужен рерайтер картинок
         old_picture_path = {}
@@ -190,5 +192,5 @@ class WayBuilderClass:
             path.floors_obj[id] = Instance.get_instance_by_id(id)
             path.floors_obj[id].picture_path = new_picture_path[id]
         # copyfile(src, dst)
-        # logging.debug('return path')
+        self.logger.debug('return path')
         return path

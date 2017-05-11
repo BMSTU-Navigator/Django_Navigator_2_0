@@ -1,198 +1,626 @@
-DEBUG:lg:setup
-DEBUG:lg:setup
-DEBUG:lg:setup
-DEBUG:lg:test
-DEBUG:lg2:test2
-DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104adff28>
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1046c8e80>
 DEBUG:JobQueue:JobQueue thread started
 DEBUG:telegram.ext.updater:dispatcher - started
 DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049b9400>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:BotMaster:new pol
 DEBUG:telegram.ext.updater:Updater thread started
 DEBUG:telegram.bot:Entering: setWebhook
 DEBUG:telegram.ext.dispatcher:Dispatcher started
 DEBUG:telegram.bot:True
 DEBUG:telegram.bot:Exiting: setWebhook
 DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:lg:test
-DEBUG:lg2:test2
-DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049e5f28>
-DEBUG:JobQueue:JobQueue thread started
-DEBUG:telegram.ext.updater:dispatcher - started
-DEBUG:telegram.ext.updater:updater - started
-DEBUG:telegram.ext.updater:Updater thread started
-DEBUG:telegram.bot:Entering: setWebhook
-DEBUG:telegram.ext.dispatcher:Dispatcher started
-DEBUG:telegram.bot:True
-DEBUG:telegram.bot:Exiting: setWebhook
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:Getting updates: [47177996]
-DEBUG:telegram.bot:[<telegram.update.Update object at 0x10460f7f0>]
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
 DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'F', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513224, 'from': {'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'type': '', 'id': 262000141}, 'migrate_from_chat_id': 0, 'message_id': 2317, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}, 'update_id': 47177996}
+DEBUG:telegram.bot:Getting updates: [113002353]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049b9978>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002353, 'message': {'channel_chat_created': False, 'supergroup_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'migrate_to_chat_id': 0, 'message_id': 74, 'date': 1494516610, 'new_chat_photo': [], 'from': {'username': 'AlexDark', 'last_name': '', 'first_name': 'AlexDark', 'id': 262000141, 'type': ''}, 'caption': '', 'chat': {'title': '', 'username': 'AlexDark', 'last_name': '', 'first_name': 'AlexDark', 'type': 'private', 'all_members_are_admins': False, 'id': 262000141}, 'photo': [], 'new_chat_title': '', 'group_chat_created': False, 'text': '/start', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'channel_chat_created': False, 'supergroup_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'migrate_to_chat_id': 0, 'message_id': 75, 'date': 1494516611, 'new_chat_photo': [], 'from': {'username': 'pokaxz_bot', 'last_name': '', 'first_name': 'pokaxzbot', 'id': 362627334, 'type': ''}, 'caption': '', 'chat': {'title': '', 'username': 'AlexDark', 'last_name': '', 'first_name': 'AlexDark', 'type': 'private', 'all_members_are_admins': False, 'id': 262000141}, 'photo': [], 'new_chat_title': '', 'group_chat_created': False, 'text': 'you are registered:/start', 'entities': [{'offset': 19, 'length': 6, 'type': 'bot_command'}]}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049bb400>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049d1f98>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [113002354]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x104724fd0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'migrate_to_chat_id': 0, 'group_chat_created': False, 'chat': {'title': '', 'id': 262000141, 'last_name': '', 'all_members_are_admins': False, 'type': 'private', 'first_name': 'AlexDark', 'username': 'AlexDark'}, 'photo': [], 'caption': '', 'migrate_from_chat_id': 0, 'entities': [{'length': 6, 'type': 'bot_command', 'offset': 0}], 'text': '/start', 'from': {'last_name': '', 'type': '', 'first_name': 'AlexDark', 'id': 262000141, 'username': 'AlexDark'}, 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494518269, 'delete_chat_photo': False, 'message_id': 76, 'supergroup_chat_created': False}, 'update_id': 113002354}
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'migrate_to_chat_id': 0, 'group_chat_created': False, 'chat': {'title': '', 'id': 262000141, 'last_name': '', 'all_members_are_admins': False, 'type': 'private', 'first_name': 'AlexDark', 'username': 'AlexDark'}, 'photo': [], 'caption': '', 'migrate_from_chat_id': 0, 'entities': [], 'text': 'you are registered:', 'from': {'last_name': '', 'type': '', 'first_name': 'pokaxzbot', 'id': 362627334, 'username': 'pokaxz_bot'}, 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494518271, 'delete_chat_photo': False, 'message_id': 77, 'supergroup_chat_created': False}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:Getting updates: [113002355]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1048ab748>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'migrate_to_chat_id': 0, 'group_chat_created': False, 'chat': {'title': '', 'id': 262000141, 'last_name': '', 'all_members_are_admins': False, 'type': 'private', 'first_name': 'AlexDark', 'username': 'AlexDark'}, 'photo': [], 'caption': '', 'migrate_from_chat_id': 0, 'entities': [], 'text': 'Q', 'from': {'last_name': '', 'type': '', 'first_name': 'AlexDark', 'id': 262000141, 'username': 'AlexDark'}, 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494518278, 'delete_chat_photo': False, 'message_id': 78, 'supergroup_chat_created': False}, 'update_id': 113002355}
+ERROR:telegram.ext.dispatcher:An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 123, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 588, in echo
+    BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 424, in get_answer
+    user = TelegramUser.get_user(None)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/models.py", line 111, in get_user
+    return TelegramUser.objects.get(user_telegram_id=chat['id'])
+TypeError: 'NoneType' object is not subscriptable
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+ERROR:telegram.ext.updater:Error while getting Updates: Timed out
+DEBUG:telegram.ext.dispatcher:Processing Update: Timed out
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104af4048>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [113002356]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1045fd8d0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'group_chat_created': False, 'migrate_to_chat_id': 0, 'chat': {'type': 'private', 'title': '', 'id': 262000141, 'all_members_are_admins': False, 'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark'}, 'new_chat_photo': [], 'from': {'type': '', 'first_name': 'AlexDark', 'last_name': '', 'id': 262000141, 'username': 'AlexDark'}, 'delete_chat_photo': False, 'date': 1494518461, 'supergroup_chat_created': False, 'entities': [], 'message_id': 79, 'migrate_from_chat_id': 0, 'photo': [], 'channel_chat_created': False, 'caption': '', 'text': 'Q', 'new_chat_title': ''}, 'update_id': 113002356}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string Q
+DEBUG:tmp BotChild:bot in  state 1
+ERROR:telegram.ext.dispatcher:An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 123, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 588, in echo
+    BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 463, in get_answer
+    BotChild_super.send_message(bot,user,'eror choosing style message')
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 540, in send_message
+    bot.sendMessage(chat_id=user.dialog_id, text=text, disable_notification=False,
+AttributeError: 'TelegramUser' object has no attribute 'dialog_id'
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104af00f0>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [113002357]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1045fc6d8>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'new_chat_title': '', 'channel_chat_created': False, 'caption': '', 'group_chat_created': False, 'migrate_from_chat_id': 0, 'date': 1494518509, 'delete_chat_photo': False, 'migrate_to_chat_id': 0, 'new_chat_photo': [], 'entities': [], 'chat': {'title': '', 'id': 262000141, 'type': 'private', 'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'all_members_are_admins': False}, 'supergroup_chat_created': False, 'photo': [], 'message_id': 80, 'from': {'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'id': 262000141, 'type': ''}, 'text': 'Q'}, 'update_id': 113002357}
 DEBUG:telegram.bot:Entering: getMe
-DEBUG:telegram.bot:{'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}
+DEBUG:telegram.bot:{'first_name': 'pokaxzbot', 'last_name': '', 'username': 'pokaxz_bot', 'id': 362627334, 'type': ''}
 DEBUG:telegram.bot:Exiting: getMe
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'get style', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513230, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2324, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}
-DEBUG:telegram.bot:Exiting: sendMessage
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:Getting updates: [47178001]
-DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049a59b0>]
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
 DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'F', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513237, 'from': {'first_name': 'AlexDark', 'last_name': '', 'username': 'AlexDark', 'type': '', 'id': 262000141}, 'migrate_from_chat_id': 0, 'message_id': 2329, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}, 'update_id': 47178001}
-DEBUG:telegram.bot:Entering: sendMessage
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'change is registered', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513237, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2330, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}
-DEBUG:telegram.bot:Exiting: sendMessage
-DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'greet', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513237, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2331, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': '', 'username': 'AlexDark', 'title': '', 'type': 'private', 'first_name': 'AlexDark', 'id': 262000141}}
-DEBUG:telegram.bot:Exiting: sendMessage
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:Getting updates: [47178008]
-DEBUG:telegram.bot:[<telegram.update.Update object at 0x10460fa20>]
-DEBUG:telegram.bot:Exiting: getUpdates
-DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'NW', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513323, 'from': {'first_name': 'Fedor', 'last_name': 'Gubarev', 'username': '', 'type': '', 'id': 375653167}, 'migrate_from_chat_id': 0, 'message_id': 2345, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}, 'update_id': 47178008}
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'ask for route point 1', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513324, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2346, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
-DEBUG:telegram.bot:Exiting: sendMessage
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:Getting updates: [47178009]
-DEBUG:telegram.bot:[<telegram.update.Update object at 0x1033b4898>]
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
 DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '102', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513337, 'from': {'first_name': 'Fedor', 'last_name': 'Gubarev', 'username': '', 'type': '', 'id': 375653167}, 'migrate_from_chat_id': 0, 'message_id': 2347, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}, 'update_id': 47178009}
-DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'point1 - ok', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513337, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2348, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
-DEBUG:telegram.bot:Exiting: sendMessage
-DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'ask for 2nd point', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513337, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2349, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
-DEBUG:telegram.bot:Exiting: sendMessage
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:Getting updates: [47178010]
-DEBUG:telegram.bot:[<telegram.update.Update object at 0x10460f518>]
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string Q
+DEBUG:tmp BotChild:bot in  state 1
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
 DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.ext.dispatcher:Processing Update: {'message': {'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '205', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513344, 'from': {'first_name': 'Fedor', 'last_name': 'Gubarev', 'username': '', 'type': '', 'id': 375653167}, 'migrate_from_chat_id': 0, 'message_id': 2350, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}, 'update_id': 47178010}
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104aac0f0>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049f61d0>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104b311d0>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049af208>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [113002358, 113002359, 113002360]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x104708f60>, <telegram.update.Update object at 0x10470e128>, <telegram.update.Update object at 0x104708ba8>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002358, 'message': {'entities': [], 'message_id': 81, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518657, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'Q', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+DEBUG:telegram.bot:Entering: getMe
+DEBUG:telegram.bot:{'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}
+DEBUG:telegram.bot:Exiting: getMe
+DEBUG:BotMaster:new pol
+ERROR:telegram.ext.dispatcher:An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 123, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 588, in echo
+    BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/models.py", line 111, in get_user
+    return TelegramUser.objects.get(user_telegram_id=chat['id'])
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 379, in get
+    self.model._meta.object_name
+Navigator.models.DoesNotExist: TelegramUser matching query does not exist.
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002359, 'message': {'entities': [], 'message_id': 82, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518669, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'Q', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+ERROR:telegram.ext.dispatcher:An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 123, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 588, in echo
+    BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/models.py", line 111, in get_user
+    return TelegramUser.objects.get(user_telegram_id=chat['id'])
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 379, in get
+    self.model._meta.object_name
+Navigator.models.DoesNotExist: TelegramUser matching query does not exist.
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002360, 'message': {'entities': [], 'message_id': 83, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518679, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'Q', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+ERROR:telegram.ext.dispatcher:An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/telegram/ext/messagehandler.py", line 123, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/bot_master.py", line 588, in echo
+    BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
+  File "/Users/aleksa/PycharmProjects/Django_Navigator_2_0/Navigator/models.py", line 111, in get_user
+    return TelegramUser.objects.get(user_telegram_id=chat['id'])
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 379, in get
+    self.model._meta.object_name
+Navigator.models.DoesNotExist: TelegramUser matching query does not exist.
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:Getting updates: [113002361]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049c6ef0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002361, 'message': {'entities': [{'length': 6, 'offset': 0, 'type': 'bot_command'}], 'message_id': 84, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518701, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '/start', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
 DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'point2 - ok', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513345, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2351, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:{'entities': [], 'message_id': 85, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518701, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'you are registered:', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Getting updates: [113002362]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10498ed68>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002362, 'message': {'entities': [], 'message_id': 86, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518705, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'Q', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string Q
+DEBUG:tmp BotChild:bot in  state 0
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 87, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518705, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'get style', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:Getting updates: [113002363]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049c6f98>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002363, 'message': {'entities': [], 'message_id': 88, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518708, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'F', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string F
+DEBUG:tmp BotChild:bot in  state 1
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 89, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518708, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'change is registered', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendMessage
 DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'wait for route', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513345, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2353, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:{'entities': [], 'message_id': 90, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518708, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'greet', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Getting updates: [113002364]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10498eef0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002364, 'message': {'entities': [], 'message_id': 91, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518710, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'NW', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string NW
+DEBUG:tmp BotChild:bot in  state 5
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 92, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518710, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'ask for route point 1', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Getting updates: [113002365]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10470e128>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002365, 'message': {'entities': [], 'message_id': 93, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518715, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '103', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string 103
+DEBUG:tmp BotChild:bot in  state 2
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 94, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518716, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'point1 - ok', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendMessage
 DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '102\nвыходи из аудитории\nмежду 102 и 111\nв сторону прохода\nмимо 103\nк Т-образному перекрестку\nповерни направо\nтеперь прямо\nмимо 106\nв сторону лестницы\nмежду 104 и 105\nНа лестницу!\nЛ-1-1\nвверх на 1 этаж', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513345, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2354, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:{'entities': [], 'message_id': 95, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518716, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'ask for 2nd point', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:Getting updates: [113002366]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x104708be0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002366, 'message': {'entities': [], 'message_id': 96, 'from': {'last_name': '', 'first_name': 'AlexDark', 'type': '', 'id': 262000141, 'username': 'AlexDark'}, 'supergroup_chat_created': False, 'date': 1494518722, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '204', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string 204
+DEBUG:tmp BotChild:bot in  state 3
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 97, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518722, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'point2 - ok', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 98, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518723, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'wait for route', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:WayBuilder:start request path start:3 stop:29
+DEBUG:WayBuilder:dekstra start:3 stop:29
+DEBUG:WayBuilder:[[], [16], [17], [18], [19], [19], [20], [21], [22], [22], [21], [17], [16], [19, 38, 63], [16, 39, 64], [22, 40, 65], [1, 12, 14, 17], [2, 11, 16, 18], [3, 17, 24], [4, 5, 13, 20], [6, 19, 25], [7, 10, 22, 25], [8, 9, 15, 21], [20, 24, 25], [18, 23, 25], [21, 23, 24], [41], [42], [43], [44], [44], [45], [46], [47], [47], [46], [42], [41], [13, 44, 63], [14, 41, 64], [15, 47, 65], [26, 37, 39, 42], [27, 36, 41, 43], [28, 42, 49], [29, 30, 38, 45], [31, 44, 48], [32, 35, 47, 50], [33, 34, 40, 46], [45, 49, 50], [43, 48, 50], [46, 48, 49], [66], [67], [68], [69], [69], [70], [71], [72], [72], [71], [67], [66], [13, 38, 69], [14, 39, 66], [15, 40, 72], [51, 62, 64, 67], [52, 61, 66, 68], [53, 67, 74], [54, 55, 63, 70], [56, 69, 73], [57, 60, 72, 75], [58, 59, 65, 71], [70, 74, 75], [68, 73, 75], [71, 73, 74]]
+DEBUG:WayBuilder:[]
+DEBUG:WayBuilder:[1, 2]
+DEBUG:WayBuilder:19
+DEBUG:WayBuilder:return path
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 99, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518723, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'выходи 103\nк Т-образному перекрестку мимо 103\nповерни направо\nтеперь прямо\nв сторону лестницы мимо 106\nНа лестницу! между 104 и 105\nвверх на 1 этаж Л-1-1', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendMessage
 DEBUG:telegram.bot:Entering: sendPhoto
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513348, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2355, 'caption': '', 'photo': [{'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABMQVzzRkT5NSy0EIAAEC', 'file_size': 1461, 'width': 90, 'height': 87}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABEpV82Pez3vazEEIAAEC', 'file_size': 15907, 'width': 320, 'height': 310}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABL7FDDTujh9PykEIAAEC', 'file_size': 56563, 'width': 800, 'height': 774}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABAxan9LkRgg5yUEIAAEC', 'file_size': 112388, 'width': 1280, 'height': 1239}, {'file_id': 'AgADAgADKKgxG1FLoEgLxj3qEaF2-VMzSw0ABKkcmTYLKKD0yEEIAAEC', 'file_size': 98791, 'width': 1312, 'height': 1270}], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:{'entities': [], 'message_id': 100, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518752, 'new_chat_photo': [], 'photo': [{'file_size': 1449, 'width': 90, 'height': 87, 'file_id': 'AgADAgADEKgxG3EvqEhZsYFp4b7tZaFStw0ABFVrQkLwvlTQxCkDAAEC'}, {'file_size': 15878, 'width': 320, 'height': 310, 'file_id': 'AgADAgADEKgxG3EvqEhZsYFp4b7tZaFStw0ABBsRPrmRY9amxSkDAAEC'}, {'file_size': 56369, 'width': 800, 'height': 774, 'file_id': 'AgADAgADEKgxG3EvqEhZsYFp4b7tZaFStw0ABB5lVKklcDlixikDAAEC'}, {'file_size': 112010, 'width': 1280, 'height': 1239, 'file_id': 'AgADAgADEKgxG3EvqEhZsYFp4b7tZaFStw0ABG4t-6ZR04pcwykDAAEC'}, {'file_size': 98432, 'width': 1312, 'height': 1270, 'file_id': 'AgADAgADEKgxG3EvqEhZsYFp4b7tZaFStw0ABMl6pJVWUfvPwikDAAEC'}], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendPhoto
 DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Л-2-1\nСходи с тестницы\nмежду 204 и 205\nЗаходи\n205', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513348, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2356, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:{'entities': [], 'message_id': 101, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518752, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'Сходи с тестницы Л-2-1\nСмотри дверь в аудиторию между 204 и 205\n 204', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendMessage
 DEBUG:telegram.bot:Entering: sendPhoto
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513351, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2357, 'caption': '', 'photo': [{'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABIrRhMljjHkNFzkIAAEC', 'file_size': 1397, 'width': 90, 'height': 87}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABIK4oT6iBE44GDkIAAEC', 'file_size': 15366, 'width': 320, 'height': 310}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABBviHAHzt7ENGTkIAAEC', 'file_size': 56270, 'width': 800, 'height': 774}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABIRRW5EN8lX3FjkIAAEC', 'file_size': 111869, 'width': 1280, 'height': 1239}, {'file_id': 'AgADAgADKagxG1FLoEiMzZd0BAdnvoUPSw0ABLHsJXVXgXd9FTkIAAEC', 'file_size': 98866, 'width': 1312, 'height': 1270}], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:{'entities': [], 'message_id': 102, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518782, 'new_chat_photo': [], 'photo': [{'file_size': 1393, 'width': 90, 'height': 87, 'file_id': 'AgADAgADF6gxG3EvqEiaITMS7G6zdfNHtw0ABA5KA-ZiZ3ut_CwDAAEC'}, {'file_size': 15369, 'width': 320, 'height': 310, 'file_id': 'AgADAgADF6gxG3EvqEiaITMS7G6zdfNHtw0ABMpO9WP4m0AY_SwDAAEC'}, {'file_size': 56226, 'width': 800, 'height': 774, 'file_id': 'AgADAgADF6gxG3EvqEiaITMS7G6zdfNHtw0ABCz23td9mM-l_iwDAAEC'}, {'file_size': 111964, 'width': 1280, 'height': 1239, 'file_id': 'AgADAgADF6gxG3EvqEiaITMS7G6zdfNHtw0ABEKdkNMEfGLv-ywDAAEC'}, {'file_size': 98894, 'width': 1312, 'height': 1270, 'file_id': 'AgADAgADF6gxG3EvqEiaITMS7G6zdfNHtw0ABEXNJBP_eIZO-iwDAAEC'}], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendPhoto
 DEBUG:telegram.bot:Entering: sendMessage
-DEBUG:telegram.bot:{'entities': [], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'going to wait state', 'new_chat_photo': [], 'new_chat_title': '', 'channel_chat_created': False, 'date': 1494513351, 'from': {'first_name': 'NavigatorTest', 'last_name': '', 'username': 'NavigatorTestBot', 'type': '', 'id': 333359292}, 'migrate_from_chat_id': 0, 'message_id': 2358, 'caption': '', 'photo': [], 'migrate_to_chat_id': 0, 'delete_chat_photo': False, 'chat': {'all_members_are_admins': False, 'last_name': 'Gubarev', 'username': '', 'title': '', 'type': 'private', 'first_name': 'Fedor', 'id': 375653167}}
+DEBUG:telegram.bot:{'entities': [], 'message_id': 103, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494518783, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'going to wait state', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'AlexDark', 'all_members_are_admins': False, 'id': 262000141, 'type': 'private', 'last_name': '', 'username': 'AlexDark'}, 'caption': ''}
 DEBUG:telegram.bot:Exiting: sendMessage
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.bot:Entering: getUpdates
-ERROR:telegram.ext.updater:Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
-DEBUG:telegram.ext.dispatcher:Processing Update: Conflict: terminated by other long poll or webhook (409)
