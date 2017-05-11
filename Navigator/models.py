@@ -84,3 +84,28 @@ class Dialogs(models.Model):  #
         # Dialogs.create_table(True)
 
         # grandma = Person.select().where(Person.name == 'Grandma L.').get()
+
+
+
+class TelegramUser(models.Model):
+    username = models.TextField(verbose_name='username', default="")
+    first_name = models.TextField(verbose_name='first_name', default="")
+    last_name = models.TextField(verbose_name='last_name', default="")
+    user_telegram_id = models.BigIntegerField(verbose_name='id', primary_key=True)
+    dialog_state=models.IntegerField(verbose_name='dialog_state',default=0)
+    dialog_style=models.IntegerField(default=1)
+    from_id=models.IntegerField(default=-1)
+    to_id=models.IntegerField(default=-1)
+    @staticmethod
+    def add_telegram_user(chat):
+        user = TelegramUser()
+        user.username = chat['username']
+        user.first_name = chat['first_name']
+        user.last_name = chat['last_name']
+        user.user_telegram_id = chat['id']
+        user.save()
+        return TelegramUser.objects.get(user_telegram_id=chat['id'])
+
+    @staticmethod
+    def get_user(chat):
+        return TelegramUser.objects.get(user_telegram_id=chat['id'])

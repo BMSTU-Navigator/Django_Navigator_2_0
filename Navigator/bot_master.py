@@ -1,27 +1,22 @@
-
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from Navigator.sub_models import Building, Graph, WayBuilderClass
 from Navigator.models import Dialogs, Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
 
-
 import time
-
 
 key_val = 1
 pre_key = 'tmp_pic'
 pre_path = './pic_dir/tmp_pic_dir/'
 
-
 id_counter = 0
 id_list = []
 bots = {}
 
-
 import logging
-logging.basicConfig(filename='ex.log',level=logging.DEBUG)
-logger = logging.getLogger('lg')
-logger.debug('test')
+
+logging.basicConfig(filename='ex.log', level=logging.DEBUG)
+master_logger = logging.getLogger('BotMaster')
 
 
 class BotChild_oldold:
@@ -60,7 +55,7 @@ class BotChild_oldold:
 
         if self.dialog_state == 0:
             self.send_message(Dialogs.get_dialog_item(0, 1))
-            #self.send_message(Dialogs.get_dialog_item(8, 1))
+            # self.send_message(Dialogs.get_dialog_item(8, 1))
             self.dialog_state = 1
             return
 
@@ -70,7 +65,7 @@ class BotChild_oldold:
                 self.send_message(Dialogs.get_dialog_item(1, self.dialog_style))
                 self.send_message(Dialogs.get_dialog_item(2, self.dialog_style))
                 self.send_message(Dialogs.get_dialog_item(3, self.dialog_style))
-                #self.send_photo('all.jpeg')
+                # self.send_photo('all.jpeg')
                 self.send_message(Dialogs.get_dialog_item(4, self.dialog_style))
                 self.dialog_state = 2
             else:
@@ -80,7 +75,7 @@ class BotChild_oldold:
         if self.dialog_state == 2:
             self.from_id = Point.get_id(input_string)
             self.send_message(Dialogs.get_dialog_item(6, self.dialog_style))
-            #self.send_message(Dialogs.get_dialog_item(7, self.dialog_style))
+            # self.send_message(Dialogs.get_dialog_item(7, self.dialog_style))
             self.dialog_state = 3
             return
 
@@ -167,8 +162,8 @@ class BotChild_old:
             return
 
         if self.dialog_state == 2:
-            id=Point.get_id(input_string)
-            if id==-1:
+            id = Point.get_id(input_string)
+            if id == -1:
                 self.send_message('eror no such a point')
             else:
                 self.from_id = id
@@ -178,8 +173,8 @@ class BotChild_old:
             return
 
         if self.dialog_state == 3:
-            id=Point.get_id(input_string)
-            if id==-1:
+            id = Point.get_id(input_string)
+            if id == -1:
                 self.send_message('eror no such a point')
             else:
                 self.to_id = id
@@ -189,8 +184,8 @@ class BotChild_old:
 
                 path = self.wb.request_path(self.from_id, self.to_id)
 
-                prev_inst_id=path.connections[0].instance.id
-                cur_instance=0
+                prev_inst_id = path.connections[0].instance.id
+                cur_instance = 0
                 for i in range(len(path.points)):
                     self.send_message(path.points[i].name)
                     if i < len(path.connections):
@@ -200,22 +195,22 @@ class BotChild_old:
                             pic_path = path.floors_obj[prev_inst_id].picture_path
                             self.send_photo(pic_path)
                         else:
-                            prev_inst_id=path.connections[i].instance.id
-                    #for i in path.floors_obj:
-                    #    pic_path = path.floors_obj[i].picture_path
-                    #    self.send_photo(pic_path)
+                            prev_inst_id = path.connections[i].instance.id
+                            # for i in path.floors_obj:
+                            #    pic_path = path.floors_obj[i].picture_path
+                            #    self.send_photo(pic_path)
                 pic_path = path.floors_obj[prev_inst_id].picture_path
                 self.send_photo(pic_path)
                 self.send_message('write something to new path')
-                self.dialog_state=4
+                self.dialog_state = 4
             return
 
         if self.dialog_state == 4:
             self.send_message('get point 1')
-            self.dialog_state=1
+            self.dialog_state = 1
             return
-        if self.dialog_state ==5:
-            #wait for new route or change style
+        if self.dialog_state == 5:
+            # wait for new route or change style
             return
 
     def send_message(self, text):
@@ -226,6 +221,7 @@ class BotChild_old:
     def send_photo(self, path):
         # logging.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
         self.telebot.send_photo(self.dialog_id, open(path, 'rb'))
+
 
 class BotChild:
     bot_id = -1
@@ -240,69 +236,68 @@ class BotChild:
     from_id = -1
     to_id = -1
     detalization_level = 2
-    logger=None
-
-
+    logger = None
 
     @staticmethod
     def get_keyboard_for_change_style():
         keyboard = [
-                ['F'],
-                ['NF'],
-                ['SNF',]
-            ]
+            ['F'],
+            ['NF'],
+            ['SNF', ]
+        ]
         return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
     @staticmethod
     def get_keyboard():
         keyboard = [
-            ['NW','CS']
+            ['NW', 'CS']
         ]
         return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
     def __init__(self, telebot, dialog_id, id_ind, way_builder_instance):
+
+        self.logger = logging.getLogger('BotChild' + str(id_ind))
+
         self.telebot = telebot
         self.dialog_id = dialog_id
         self.dialog_state = 0
         self.dialog_style = 1
         self.bot_id = id_ind
-        # logging.debug('init bot '+str(id))
-        # logging.debug('request building')
-        # self.building = Building.get_building()
-        # logging.debug('init WB class')
+        self.logger.debug('init bot ' + str(id))
+        self.logger.debug('request building')
+        self.logger.debug('init WB class')
         self.wb = way_builder_instance
-        # logging.debug('config wb')
+        self.logger.debug('config wb')
         self.wb.init_pre_count()
 
     def get_answer(self, input_string):
 
-        # logging.debug('request amswer from bot '+str(self.bot_id))
-        # logging.debug('request by string '+input_string)
-        # logging.debug('bot in  state ' + str(self.dialog_state))
+        self.logger.debug('request amswer from bot ' + str(self.bot_id))
+        self.logger.debug('request by string ' + input_string)
+        self.logger.debug('bot in  state ' + str(self.dialog_state))
         if input_string == 'NW' or input_string == 'CS':
             if input_string == 'CS':
                 self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
                 self.dialog_state = 1
+                return
             if input_string == 'NW':
                 self.send_message('ask for route point 1')
                 self.dialog_state = 2
-
-
-
+                return
 
         if self.dialog_state == 0:
-            self.send_message_with_keyboard('get style',self.get_keyboard_for_change_style())
-            #self.send_message('send keyboard')
+            self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
+
             self.dialog_state = 1
             return
 
         if self.dialog_state == 1:
-            if input_string=='F'or input_string=='NF' or input_string=='SNF':
+            if input_string == 'F' or input_string == 'NF' or input_string == 'SNF':
 
-                if input_string=='F': self.dialog_style=1;
+                if input_string == 'F': self.dialog_style = 1;
                 if input_string == 'NF': self.dialog_style = 2;
                 if input_string == 'SNF': self.dialog_style = 3;
-                self.send_message_with_keyboard('change is registered',self.get_keyboard())
+                self.send_message_with_keyboard('change is registered', self.get_keyboard())
                 self.send_message('greet')
                 self.dialog_state = 5
             else:
@@ -310,8 +305,8 @@ class BotChild:
             return
 
         if self.dialog_state == 2:
-            id=Point.get_id(input_string)
-            if id==-1:
+            id = Point.get_id(input_string)
+            if id == -1:
                 self.send_message('eror no such a point')
             else:
                 self.from_id = id
@@ -321,113 +316,291 @@ class BotChild:
             return
 
         if self.dialog_state == 3:
-            id=Point.get_id(input_string)
-            if id==-1:
+            id = Point.get_id(input_string)
+            if id == -1:
                 self.send_message('eror no such a point')
             else:
                 self.to_id = id
                 self.send_message('point2 - ok')
                 self.send_message('wait for route')
-                self.dialog_state = 4
 
                 path = self.wb.request_path(self.from_id, self.to_id)
 
-                prev_inst_id=path.connections[0].instance.id
+                prev_inst_id = path.connections[0].instance.id
 
-
-                message=''
+                message = ''
                 for i in range(len(path.points)):
-                    message+='\n'+path.points[i].name
+                    # if not path.points[i].hidden:
+                    #    message+='\n'+path.points[i].name
 
                     if i < len(path.connections):
                         message += '\n' + str(path.connections[i].connection_comment)
-
+                        if not path.points[i].hidden:
+                            message += ' ' + path.points[i].name
                         if path.connections[i].trans_instance_marker:
                             self.send_message(message)
                             pic_path = path.floors_obj[prev_inst_id].picture_path
                             self.send_photo(pic_path)
-                            message=''
+                            message = ''
                         else:
-                            prev_inst_id=path.connections[i].instance.id
-
+                            prev_inst_id = path.connections[i].instance.id
+                message += '\n ' + path.points[len(path.points) - 1].name
                 self.send_message(message)
                 pic_path = path.floors_obj[prev_inst_id].picture_path
                 self.send_photo(pic_path)
 
                 self.send_message('going to wait state')
-                self.dialog_state=5
+                self.dialog_state = 5
             return
 
         if self.dialog_state == 4:
             self.send_message('get point 1')
-            self.dialog_state=2
+            self.dialog_state = 2
             return
-        if self.dialog_state ==5:
-            #wait for new route or change style
-            if input_string=='NW' or input_string=='CS':
-                if input_string=='CS':
+        if self.dialog_state == 5:
+            # wait for new route or change style
+            if input_string == 'NW' or input_string == 'CS':
+                if input_string == 'CS':
                     self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
                     self.dialog_state = 1
-                if input_string=='NW':
+                    return
+                if input_string == 'NW':
                     self.send_message('ask for route point 1')
-                    #self.send_message('change keyboard to new way change style')
+                    # self.send_message('change keyboard to new way change style')
                     self.dialog_state = 2
+                    return
 
             else:
                 self.send_message('dont understand')
             return
 
     def send_message(self, text):
-        # logging.debug('bot ' + str(self.bot_id)+' sending text:'+text)
+        self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
         self.telebot.send_message(self.dialog_id,
                                   text)
 
-    def send_message_clear_keyboard(self,text):
+    def send_message_clear_keyboard(self, text):
+        self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
+
         keyboard = [
         ]
-        keyboard= ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+        keyboard = ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
-        self.telebot.sendMessage(chat_id=self.dialog_id, text=text,reply_markup=keyboard, disable_notification=False,disable_web_page_prewview=True)
+        self.telebot.sendMessage(chat_id=self.dialog_id, text=text, reply_markup=keyboard, disable_notification=False,
+                                 disable_web_page_prewview=True)
 
-    def send_message_with_keyboard(self, text,keyboard):
-        # logging.debug('bot ' + str(self.bot_id)+' sending text:'+text)
+    def send_message_with_keyboard(self, text, keyboard):
+        self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
+
         self.telebot.sendMessage(chat_id=self.dialog_id, text=text,
-                              reply_markup=keyboard, disable_notification=False,disable_web_page_prewview=True)
-        #self.telebot.send_message(self.dialog_id,
+                                 reply_markup=keyboard, disable_notification=False, disable_web_page_prewview=True)
+        # self.telebot.send_message(self.dialog_id,
         #                          text,keyboard)
 
     def send_photo(self, path):
-        # logging.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
+        self.logger.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
         self.telebot.send_photo(self.dialog_id, open(path, 'rb'))
 
-print('start')
-# logging.debug('start')
 
+class BotChild_super:
+    @staticmethod
+    def get_keyboard_for_change_style():
+        keyboard = [
+            ['F'],
+            ['NF'],
+            ['SNF', ]
+        ]
+        return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+    @staticmethod
+    def get_keyboard():
+        keyboard = [
+            ['NW', 'CS']
+        ]
+        return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+    @staticmethod
+    def get_answer(input_string, user, wb,bot):
+
+
+        logger = logging.getLogger('tmp BotChild')
+        logger.debug('request amswer from bot ')
+        logger.debug('request by string ' + input_string)
+        logger.debug('bot in  state ' + str(user.dialog_state))
+
+        if input_string == 'NW' or input_string == 'CS':
+            if input_string == 'CS':
+                BotChild_super.send_message_with_keyboard(bot,user,'get style', BotChild_super.get_keyboard_for_change_style())
+                user.dialog_state = 1
+                user.save()
+                return
+
+            if input_string == 'NW':
+                BotChild_super.send_message(bot,user,'ask for route point 1')
+                user.dialog_state = 2
+                user.save()
+                return
+
+        if user.dialog_state == 0:
+            BotChild_super.send_message_with_keyboard(bot,user,'get style', BotChild_super.get_keyboard_for_change_style())
+
+            user.dialog_state = 1
+            user.save()
+
+            return
+
+        if user.dialog_state == 1:
+            if input_string == 'F' or input_string == 'NF' or input_string == 'SNF':
+
+                if input_string == 'F': user.dialog_style = 1;
+                if input_string == 'NF': user.dialog_style = 2;
+                if input_string == 'SNF': user.dialog_style = 3;
+                BotChild_super.send_message_with_keyboard(bot,user,'change is registered', BotChild_super.get_keyboard())
+                BotChild_super.send_message(bot,user,'greet')
+                user.dialog_state = 5
+                user.save()
+            else:
+                BotChild_super.send_message(bot,user,'eror choosing style message')
+            return
+
+        if user.dialog_state == 2:
+            id = Point.get_id(input_string)
+            if id == -1:
+                BotChild_super.send_message(bot,user,'eror no such a point')
+            else:
+                user.from_id = id
+                BotChild_super.send_message(bot,user,'point1 - ok')
+                BotChild_super.send_message(bot,user,'ask for 2nd point')
+                user.dialog_state = 3
+                user.save()
+            return
+
+        if user.dialog_state == 3:
+            id = Point.get_id(input_string)
+            if id == -1:
+                BotChild_super.send_message(bot,user,'eror no such a point')
+            else:
+                user.to_id = id
+                BotChild_super.send_message(bot,user,'point2 - ok')
+                BotChild_super.send_message(bot,user,'wait for route')
+                user.save()
+
+                path = wb.request_path(user.from_id, user.to_id)
+
+                prev_inst_id = path.connections[0].instance.id
+
+                message = ''
+                for i in range(len(path.points)):
+                    # if not path.points[i].hidden:
+                    #    message+='\n'+path.points[i].name
+
+                    if i < len(path.connections):
+                        message += '\n' + str(path.connections[i].connection_comment)
+                        if not path.points[i].hidden:
+                            message += ' ' + path.points[i].name
+                        if path.connections[i].trans_instance_marker:
+                            BotChild_super.send_message(bot,user,message)
+                            pic_path = path.floors_obj[prev_inst_id].picture_path
+                            BotChild_super.send_photo(bot,user,pic_path)
+                            message = ''
+                        else:
+                            prev_inst_id = path.connections[i].instance.id
+                message += '\n ' + path.points[len(path.points) - 1].name
+                BotChild_super.send_message(bot,user,message)
+                pic_path = path.floors_obj[prev_inst_id].picture_path
+                BotChild_super.send_photo(bot,user,pic_path)
+
+                BotChild_super.send_message(bot,user,'going to wait state')
+                user.dialog_state = 5
+                user.save()
+            return
+
+        if user.dialog_state == 5:
+            # wait for new route or change style
+            if input_string == 'NW' or input_string == 'CS':
+                if input_string == 'CS':
+                    BotChild_super.send_message_with_keyboard(bot,user,'get style', BotChild_super.get_keyboard_for_change_style())
+                    user.dialog_state = 1
+                    user.save()
+                    return
+                if input_string == 'NW':
+                    BotChild_super.send_message(bot,user,'ask for route point 1')
+                    # self.send_message('change keyboard to new way change style')
+                    user.dialog_state = 2
+                    user.save()
+                    return
+
+            else:
+                BotChild_super.send_message(bot,user,'dont understand')
+            return
+
+    @staticmethod
+    def send_message(bot, user, text):
+        # self.logger.debug('bot ' + str(self.bot_id)+' sending text:'+text)
+        bot.sendMessage(chat_id=user.user_telegram_id, text=text, disable_notification=False,
+                        disable_web_page_prewview=True)
+
+    @staticmethod
+    def send_message_clear_keyboard(bot, user, text):
+        # self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
+
+        keyboard = [
+        ]
+        keyboard = ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+        bot.sendMessage(chat_id=user.user_telegram_id, text=text, reply_markup=keyboard, disable_notification=False,
+                        disable_web_page_prewview=True)
+
+    @staticmethod
+    def send_message_with_keyboard(bot, user, text, keyboard):
+        # self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
+
+        bot.sendMessage(chat_id=user.user_telegram_id, text=text,
+                        reply_markup=keyboard, disable_notification=False, disable_web_page_prewview=True)
+        # self.telebot.send_message(self.dialog_id,
+        #                          text,keyboard)
+
+    def send_photo(bot, user, path):
+        # self.logger.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
+        bot.send_photo(user.user_telegram_id, open(path, 'rb'))
+
+
+print('start')
+master_logger.debug('start')
 
 building = Building.get_building()
-# logging.debug('init WB class')
+master_logger.debug('init WB class')
 main_way_builder_instance = WayBuilderClass(building)
 
 
-def echo(bot, update):
+def echo_old(bot, update):
     if update.message.chat.id not in id_list:
         id_list.append(update.message.chat.id)
         tmp_bot = BotChild(bot, update.message.chat.id, len(id_list), main_way_builder_instance)
-        tmp_bot.logger=logger
         bots[update.message.chat.id] = tmp_bot
 
     bots[update.message.chat.id].get_answer(update.message.text)
 
 
+def echo(bot, update):
+    text=update.message.text
+
+    BotChild_super.get_answer(text,TelegramUser.get_user(update.message.chat),main_way_builder_instance,bot)
+
+
+from Navigator.models import TelegramUser
+
+
 def command(bot, update):
+    if update.message.text == '/start':
+        TelegramUser.add_telegram_user(update.message.chat)
+        bot.send_message(text='you are registered:', chat_id=update.message.chat_id, disable_web_page_preview=True)
+        BotChild_super.send_message_with_keyboard(bot, TelegramUser.get_user(update.message.chat), 'get style',
+                                                  BotChild_super.get_keyboard_for_change_style())
 
-    for i in building.graph.connections:
-        if i.trans_instance_marker:
-            print('true')
-
-    # echo a command
-    path=main_way_builder_instance.request_path(Point.get_id('101'), Point.get_id('105'))
-    bot.send_message(text='received command:' + update.message.text, chat_id=update.message.chat_id,disable_web_page_preview=True)
+    else:
+        bot.send_message(text='received uncnown command:' + update.message.text, chat_id=update.message.chat_id,
+                         disable_web_page_preview=True)
 
 
 def error(bot, updater):
@@ -437,33 +610,51 @@ def error(bot, updater):
 def work_cycle():
     try:
         updater.start_polling()
+        master_logger.debug('new pol')
         time.sleep(10)
+        work_cycle()
     except Exception as exc:
         print('bot crashed:')
+        master_logger.debug('bot crashed')
         print(exc)
+        master_logger.debug(exc)
         work_cycle()
 
 
 command_handler = MessageHandler(Filters.command, command)
 echo_handler = MessageHandler(Filters.text, echo)
-updater = Updater(token='333359292:AAGf_E6lYBiojMkuyfxW1wefq65D9f2QAss')
+
+import getpass
+
+user = getpass.getuser()
+
+token1 = '333359292:AAGf_E6lYBiojMkuyfxW1wefq65D9f2QAss'
+token2 = '362627334:AAHil__LDmOE0WQ0FY-Czyh7yd6KS9JlDbc'
+
+token = ''
+if user == 'aleksa':
+    token = token2
+else:
+    token = token1
+
+updater = Updater(token=token)
 
 dispatcher = updater.dispatcher
 dispatcher.add_handler(command_handler)
-dispatcher.add_error_handler(error)
+# dispatcher.add_error_handler(error)
 dispatcher.add_handler(echo_handler)
 
 # updater.dispatcher.add_handler(CallbackQueryHandler(button)) #for message inline
 
 
 
-
-
-while True:
-    print('new poling')
-    try:
-        updater.start_polling()
-        time.sleep(10)
-    except Exception as excp:
-        print('bot crashed:')
-        print(excp)
+work_cycle()
+#
+# while True:
+#    print('new poling')
+#    try:
+#        updater.start_polling()
+#        time.sleep(10)
+#    except Exception as excp:
+#        print('bot crashed:')
+#        print(excp)
