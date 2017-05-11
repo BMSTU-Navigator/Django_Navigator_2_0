@@ -1,0 +1,1 @@
+web: gunicorn -e DJANGO_SETTINGS_MODULE=Django_Navigator_2_0.settings Django_Navigator_2_0.wsgi --log-file -
