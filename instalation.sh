@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo -s
+echo "install python"
 apt-get install python3
 apt-get install git
 

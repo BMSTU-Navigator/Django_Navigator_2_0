@@ -4,20 +4,19 @@ from Navigator.sub_models import Building, Graph, WayBuilderClass
 from Navigator.models import Dialogs, Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
 
+
 import time
+
 
 key_val = 1
 pre_key = 'tmp_pic'
 pre_path = './pic_dir/tmp_pic_dir/'
 
+
 id_counter = 0
 id_list = []
 bots = {}
 
-
-
-
-# test fragment of logging
 
 import logging
 logging.basicConfig(filename='ex.log',level=logging.DEBUG)
