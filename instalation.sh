@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-#sudo -s
-#apt-get install python3
-#t as a variable of dir path
+sudo -s
+apt-get install python3
+apt-get install git
+
+t = "./Django_Navigator_2_0"
 if [ -d t ]; then
     if [ -L t ]; then
         rm t
@@ -11,9 +13,9 @@ if [ -d t ]; then
     fi
 fi
 
-#git clone command
-#cd git dir
+git clone https://github.com/BMSTU-Navigator/Django_Navigator_2_0.git
+cd ./Django_Navigator_2_0
 
-#sudo pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 
-#python3 manage.py runserver localhost:8000
+python3 manage.py runserver localhost:8000

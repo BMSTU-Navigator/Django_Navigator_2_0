@@ -61,7 +61,7 @@ class WayBuilderClass:
     max_id = -1
     key_val = 1
     pre_key = 'tmp_pic'
-    pre_path = '/home/alexdark/'
+    pre_path = './pic_dir/tmp_pic_dir/'
 
 
     def __init__(self, building):
@@ -167,12 +167,15 @@ class WayBuilderClass:
         old_picture_path = {}
         new_picture_path = {}
         draw_points_dict_of_sequences = {}
-        return path
+
         for id in path.floors:
             draw_points_dict_of_sequences[id] = []
 
         for point in path.points:
-            draw_points_dict_of_sequences[point.floor_index].append(point)
+            mas =draw_points_dict_of_sequences[point.floor.id]
+            mas.append(point)
+            draw_points_dict_of_sequences[point.floor.id]=mas
+            #draw_points_dict_of_sequences[point.floor_index].append(point)
 
         for floor_id in path.floors:
             old_picture_path[floor_id] = Instance.get_instance_path_by_id(floor_id)

@@ -10,7 +10,7 @@ class Instance(models.Model):
 
     @staticmethod
     def get_instance_path_by_id(id):
-        tmp = (Instance.objects.get(id=id)).picture_path
+        tmp = (Instance.objects.get(id=id)).path
         return tmp
 
     @staticmethod
@@ -31,7 +31,10 @@ class Point(models.Model):
 
     @staticmethod
     def get_id(string):
-        return (Point.objects.get(name=string)).id
+        try:
+            return (Point.objects.get(name=string)).id
+        except Exception as ex:
+            return -1
 
 
 """ этаж
