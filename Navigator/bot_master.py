@@ -274,6 +274,10 @@ class BotChild:
         # logging.debug('config wb')
         self.wb.init_pre_count()
 
+
+
+
+
     def get_answer(self, input_string):
 
         # logging.debug('request amswer from bot '+str(self.bot_id))
@@ -283,10 +287,11 @@ class BotChild:
             if input_string == 'CS':
                 self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
                 self.dialog_state = 1
+                return
             if input_string == 'NW':
                 self.send_message('ask for route point 1')
                 self.dialog_state = 2
-
+                return
 
 
 
@@ -328,7 +333,7 @@ class BotChild:
                 self.to_id = id
                 self.send_message('point2 - ok')
                 self.send_message('wait for route')
-                self.dialog_state = 4
+
 
                 path = self.wb.request_path(self.from_id, self.to_id)
 
