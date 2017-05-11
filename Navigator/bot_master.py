@@ -646,7 +646,10 @@ dispatcher.add_handler(echo_handler)
 
 # updater.dispatcher.add_handler(CallbackQueryHandler(button)) #for message inline
 
+import threading
 
+th=threading.Thread(target=work_cycle)
+th.start()
 
 #work_cycle()
 #
