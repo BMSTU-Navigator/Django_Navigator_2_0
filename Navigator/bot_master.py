@@ -18,10 +18,10 @@ id_list = []
 bots = {}
 
 
-import logging
-logging.basicConfig(filename='ex.log',level=logging.DEBUG)
-logger = logging.getLogger('lg')
-logger.debug('test')
+#import logging
+#logging.basicConfig(filename='ex.log',level=logging.DEBUG)
+#logger = logging.getLogger('lg')
+#logger.debug('test')
 
 
 class BotChild_oldold:
@@ -413,7 +413,7 @@ def echo(bot, update):
     if update.message.chat.id not in id_list:
         id_list.append(update.message.chat.id)
         tmp_bot = BotChild(bot, update.message.chat.id, len(id_list), main_way_builder_instance)
-        tmp_bot.logger=logger
+        #tmp_bot.logger=logger
         bots[update.message.chat.id] = tmp_bot
 
     bots[update.message.chat.id].get_answer(update.message.text)
@@ -438,6 +438,7 @@ def work_cycle():
     try:
         updater.start_polling()
         time.sleep(10)
+        work_cycle()
     except Exception as exc:
         print('bot crashed:')
         print(exc)
@@ -457,13 +458,13 @@ dispatcher.add_handler(echo_handler)
 
 
 
-
-
-while True:
-    print('new poling')
-    try:
-        updater.start_polling()
-        time.sleep(10)
-    except Exception as excp:
-        print('bot crashed:')
-        print(excp)
+work_cycle()
+#
+#while True:
+#    print('new poling')
+#    try:
+#        updater.start_polling()
+#        time.sleep(10)
+#    except Exception as excp:
+#        print('bot crashed:')
+#        print(excp)
