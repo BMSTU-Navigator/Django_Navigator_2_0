@@ -624,3 +624,359 @@ DEBUG:telegram.bot:No new updates found.
 DEBUG:telegram.bot:[]
 DEBUG:telegram.bot:Exiting: getUpdates
 DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:Getting updates: [113002367]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049c6ef0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002367, 'message': {'entities': [{'length': 6, 'offset': 0, 'type': 'bot_command'}], 'message_id': 104, 'from': {'last_name': 'Astanov', 'first_name': 'Zafar', 'type': '', 'id': 54908773, 'username': 'anonpc'}, 'supergroup_chat_created': False, 'date': 1494519111, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '/start', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}}
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 105, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519111, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'you are registered:', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Getting updates: [113002368]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x10498eef0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002368, 'message': {'entities': [], 'message_id': 106, 'from': {'last_name': 'Astanov', 'first_name': 'Zafar', 'type': '', 'id': 54908773, 'username': 'anonpc'}, 'supergroup_chat_created': False, 'date': 1494519117, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'G', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string G
+DEBUG:tmp BotChild:bot in  state 0
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 107, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519117, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'get style', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:Getting updates: [113002369]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049af780>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002369, 'message': {'entities': [], 'message_id': 108, 'from': {'last_name': 'Astanov', 'first_name': 'Zafar', 'type': '', 'id': 54908773, 'username': 'anonpc'}, 'supergroup_chat_created': False, 'date': 1494519119, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'F', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string F
+DEBUG:tmp BotChild:bot in  state 1
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 109, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519120, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'change is registered', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 110, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519120, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'greet', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Getting updates: [113002370]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x104a476d8>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002370, 'message': {'entities': [], 'message_id': 111, 'from': {'last_name': 'Astanov', 'first_name': 'Zafar', 'type': '', 'id': 54908773, 'username': 'anonpc'}, 'supergroup_chat_created': False, 'date': 1494519122, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'NW', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string NW
+DEBUG:tmp BotChild:bot in  state 5
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 112, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519122, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'ask for route point 1', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Getting updates: [113002371]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x104a47a20>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002371, 'message': {'entities': [], 'message_id': 113, 'from': {'last_name': 'Astanov', 'first_name': 'Zafar', 'type': '', 'id': 54908773, 'username': 'anonpc'}, 'supergroup_chat_created': False, 'date': 1494519125, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '307', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string 307
+DEBUG:tmp BotChild:bot in  state 2
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 114, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519126, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'point1 - ok', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 115, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519126, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'ask for 2nd point', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:Getting updates: [113002372]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x1049c6ef0>]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 113002372, 'message': {'entities': [], 'message_id': 116, 'from': {'last_name': 'Astanov', 'first_name': 'Zafar', 'type': '', 'id': 54908773, 'username': 'anonpc'}, 'supergroup_chat_created': False, 'date': 1494519130, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '206', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}}
+DEBUG:tmp BotChild:request amswer from bot 
+DEBUG:tmp BotChild:request by string 206
+DEBUG:tmp BotChild:bot in  state 3
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 117, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519131, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'point2 - ok', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 118, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519132, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'wait for route', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:WayBuilder:start request path start:57 stop:31
+DEBUG:WayBuilder:dekstra start:57 stop:31
+DEBUG:WayBuilder:[[], [16], [17], [18], [19], [19], [20], [21], [22], [22], [21], [17], [16], [19, 38, 63], [16, 39, 64], [22, 40, 65], [1, 12, 14, 17], [2, 11, 16, 18], [3, 17, 24], [4, 5, 13, 20], [6, 19, 25], [7, 10, 22, 25], [8, 9, 15, 21], [20, 24, 25], [18, 23, 25], [21, 23, 24], [41], [42], [43], [44], [44], [45], [46], [47], [47], [46], [42], [41], [13, 44, 63], [14, 41, 64], [15, 47, 65], [26, 37, 39, 42], [27, 36, 41, 43], [28, 42, 49], [29, 30, 38, 45], [31, 44, 48], [32, 35, 47, 50], [33, 34, 40, 46], [45, 49, 50], [43, 48, 50], [46, 48, 49], [66], [67], [68], [69], [69], [70], [71], [72], [72], [71], [67], [66], [13, 38, 69], [14, 39, 66], [15, 40, 72], [51, 62, 64, 67], [52, 61, 66, 68], [53, 67, 74], [54, 55, 63, 70], [56, 69, 73], [57, 60, 72, 75], [58, 59, 65, 71], [70, 74, 75], [68, 73, 75], [71, 73, 74]]
+DEBUG:WayBuilder:[]
+DEBUG:WayBuilder:[2, 3]
+DEBUG:WayBuilder:21
+DEBUG:WayBuilder:return path
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 119, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519132, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'выходи 307\nна перекресток между 307 и 310\nпрямо\nпрямо\nв сторону лестницы мимо 306\nна лестницу между 304 и 305\nвниз на 1 этаж Л-3-1', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendPhoto
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:{'entities': [], 'message_id': 120, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519144, 'new_chat_photo': [], 'photo': [{'file_size': 1453, 'width': 90, 'height': 87, 'file_id': 'AgADAgADy6cxG_N_qUjc_S6WVDLm2xsRSw0ABJ1QzZT4iPGfajYIAAEC'}, {'file_size': 15756, 'width': 320, 'height': 310, 'file_id': 'AgADAgADy6cxG_N_qUjc_S6WVDLm2xsRSw0ABJK7ZL5RkLAdaTYIAAEC'}, {'file_size': 57263, 'width': 800, 'height': 774, 'file_id': 'AgADAgADy6cxG_N_qUjc_S6WVDLm2xsRSw0ABMcbxB2y9bjLbDYIAAEC'}, {'file_size': 113937, 'width': 1280, 'height': 1239, 'file_id': 'AgADAgADy6cxG_N_qUjc_S6WVDLm2xsRSw0ABMNlhVAsk4FKazYIAAEC'}, {'file_size': 100717, 'width': 1312, 'height': 1270, 'file_id': 'AgADAgADy6cxG_N_qUjc_S6WVDLm2xsRSw0ABE4ZqH06aWZYaDYIAAEC'}], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendPhoto
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 121, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519145, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'Сходи с тестницы Л-2-1\nВ сторону перекрестка между 204 и 205\nЗаходи мимо 206\n 206', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:telegram.bot:Entering: sendPhoto
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:telegram.bot:{'entities': [], 'message_id': 122, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519154, 'new_chat_photo': [], 'photo': [{'file_size': 1414, 'width': 90, 'height': 87, 'file_id': 'AgADAgADzKcxG_N_qUgsGt4vTmNKmQ0PSw0ABJ-irOpe-WB8SkAIAAEC'}, {'file_size': 15512, 'width': 320, 'height': 310, 'file_id': 'AgADAgADzKcxG_N_qUgsGt4vTmNKmQ0PSw0ABIdsAa13dNbfS0AIAAEC'}, {'file_size': 56703, 'width': 800, 'height': 774, 'file_id': 'AgADAgADzKcxG_N_qUgsGt4vTmNKmQ0PSw0ABNsBQsP7skOdTEAIAAEC'}, {'file_size': 113108, 'width': 1280, 'height': 1239, 'file_id': 'AgADAgADzKcxG_N_qUgsGt4vTmNKmQ0PSw0ABItblMcW5xUYSUAIAAEC'}, {'file_size': 99917, 'width': 1312, 'height': 1270, 'file_id': 'AgADAgADzKcxG_N_qUgsGt4vTmNKmQ0PSw0ABL3c0xyyHCOxSEAIAAEC'}], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': '', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendPhoto
+DEBUG:telegram.bot:Entering: sendMessage
+DEBUG:telegram.bot:{'entities': [], 'message_id': 123, 'from': {'last_name': '', 'first_name': 'pokaxzbot', 'type': '', 'id': 362627334, 'username': 'pokaxz_bot'}, 'supergroup_chat_created': False, 'date': 1494519154, 'new_chat_photo': [], 'photo': [], 'group_chat_created': False, 'migrate_from_chat_id': 0, 'delete_chat_photo': False, 'channel_chat_created': False, 'new_chat_title': '', 'text': 'going to wait state', 'migrate_to_chat_id': 0, 'chat': {'title': '', 'first_name': 'Zafar', 'all_members_are_admins': False, 'id': 54908773, 'type': 'private', 'last_name': 'Astanov', 'username': 'anonpc'}, 'caption': ''}
+DEBUG:telegram.bot:Exiting: sendMessage
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x104b34160>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:new pol
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: getUpdates
+DEBUG:telegram.bot:Entering: getUpdates
+DEBUG:BotMaster:start
+DEBUG:BotMaster:init WB class
+DEBUG:WayBuilder:init WB class
+DEBUG:WayBuilder:request building
+DEBUG:WayBuilder:pre count
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x1049bacf8>
+DEBUG:JobQueue:JobQueue thread started
+DEBUG:telegram.ext.updater:dispatcher - started
+DEBUG:telegram.ext.updater:updater - started
+DEBUG:BotMaster:new pol
+DEBUG:telegram.ext.updater:Updater thread started
+DEBUG:telegram.bot:Entering: setWebhook
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: setWebhook
+DEBUG:telegram.bot:Entering: getUpdates
