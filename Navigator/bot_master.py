@@ -1,11 +1,9 @@
-# https://groosha.gitbooks.io/telegram-bot-lessons/content/chapter1.h
-
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from Navigator.sub_models import Building, Graph, WayBuilderClass
 from Navigator.models import Dialogs, Point
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
-#import logging
+
 import time
 
 key_val = 1
@@ -17,12 +15,33 @@ id_list = []
 bots = {}
 
 
-# comment logging
-#logging.basicConfig(filename='example.log',level=logging.DEBUG)
-# logging example
-# logging.debug('This message should go to the log file')
-# logging.info('So should this')
-# logging.warning('And this, too')
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '/path/to/django/debug.log',
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+
+
+# test fragment of logging
+
+import logging
+logging.basicConfig(filename='ex.log',level=logging.DEBUG)
+logger = logging.getLogger('lg')
+logging.debug('test')
 
 
 class BotChild:
