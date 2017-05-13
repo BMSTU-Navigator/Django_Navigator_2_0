@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from Navigator.sub_models import Building, Graph, WayBuilderClass
-from Navigator.models import Dialogs, Point
+from Navigator.models import Dialogs, Point, HistoryPath
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton, ParseMode
 
 import time
@@ -17,6 +17,13 @@ import logging
 
 logging.basicConfig(filename='ex.log', level=logging.DEBUG)
 master_logger = logging.getLogger('BotMaster')
+
+
+
+def dg(id,user):
+    if user.dialog_style == 1: return Dialogs.objects.get(id=id).style1
+    if user.dialog_style == 2: return Dialogs.objects.get(id=id).style2
+    if user.dialog_style == 3: return Dialogs.objects.get(id=id).style3
 
 
 class BotChild_oldold:
@@ -241,16 +248,16 @@ class BotChild:
     @staticmethod
     def get_keyboard_for_change_style():
         keyboard = [
-            ['F'],
-            ['NF'],
-            ['SNF', ]
+            ['Формальный'],
+            ['Для друзей'],
+            ['Для братишек', ]
         ]
         return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
     @staticmethod
     def get_keyboard():
         keyboard = [
-            ['NW', 'CS']
+            ['Построить маршрут', 'Сменить стиль диалога']
         ]
         return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
@@ -275,12 +282,12 @@ class BotChild:
         self.logger.debug('request amswer from bot ' + str(self.bot_id))
         self.logger.debug('request by string ' + input_string)
         self.logger.debug('bot in  state ' + str(self.dialog_state))
-        if input_string == 'NW' or input_string == 'CS':
-            if input_string == 'CS':
+        if input_string == 'Построить маршрут' or input_string == 'Сменить стиль диалога':
+            if input_string == 'Сменить стиль диалога':
                 self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
                 self.dialog_state = 1
                 return
-            if input_string == 'NW':
+            if input_string == 'Построить маршрут':
                 self.send_message('ask for route point 1')
                 self.dialog_state = 2
                 return
@@ -292,11 +299,11 @@ class BotChild:
             return
 
         if self.dialog_state == 1:
-            if input_string == 'F' or input_string == 'NF' or input_string == 'SNF':
+            if input_string == 'Формальный' or input_string == 'Для друзей' or input_string == 'Для братишек':
 
-                if input_string == 'F': self.dialog_style = 1;
-                if input_string == 'NF': self.dialog_style = 2;
-                if input_string == 'SNF': self.dialog_style = 3;
+                if input_string == 'Формальный': self.dialog_style = 1;
+                if input_string == 'Для друзей': self.dialog_style = 2;
+                if input_string == 'Для братишек': self.dialog_style = 3;
                 self.send_message_with_keyboard('change is registered', self.get_keyboard())
                 self.send_message('greet')
                 self.dialog_state = 5
@@ -359,12 +366,12 @@ class BotChild:
             return
         if self.dialog_state == 5:
             # wait for new route or change style
-            if input_string == 'NW' or input_string == 'CS':
-                if input_string == 'CS':
+            if input_string == 'Построить маршрут' or input_string == 'Сменить стиль диалога':
+                if input_string == 'Сменить стиль диалога':
                     self.send_message_with_keyboard('get style', self.get_keyboard_for_change_style())
                     self.dialog_state = 1
                     return
-                if input_string == 'NW':
+                if input_string == 'Построить маршрут':
                     self.send_message('ask for route point 1')
                     # self.send_message('change keyboard to new way change style')
                     self.dialog_state = 2
@@ -402,20 +409,20 @@ class BotChild:
         self.telebot.send_photo(self.dialog_id, open(path, 'rb'))
 
 
-class BotChild_super:
+class BotChild_super_old:
     @staticmethod
     def get_keyboard_for_change_style():
         keyboard = [
-            ['F'],
-            ['NF'],
-            ['SNF', ]
+            ['Формальный'],
+            ['Для друзей'],
+            ['Для братишек', ]
         ]
         return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
     @staticmethod
     def get_keyboard():
         keyboard = [
-            ['NW', 'CS']
+            ['Построить маршрут', 'Сменить стиль диалога']
         ]
         return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
 
@@ -428,14 +435,14 @@ class BotChild_super:
         logger.debug('request by string ' + input_string)
         logger.debug('bot in  state ' + str(user.dialog_state))
 
-        if input_string == 'NW' or input_string == 'CS':
-            if input_string == 'CS':
+        if input_string == 'Построить маршрут' or input_string == 'Сменить стиль диалога':
+            if input_string == 'Сменить стиль диалога':
                 BotChild_super.send_message_with_keyboard(bot,user,'get style', BotChild_super.get_keyboard_for_change_style())
                 user.dialog_state = 1
                 user.save()
                 return
 
-            if input_string == 'NW':
+            if input_string == 'Построить маршрут':
                 BotChild_super.send_message(bot,user,'ask for route point 1')
                 user.dialog_state = 2
                 user.save()
@@ -450,11 +457,11 @@ class BotChild_super:
             return
 
         if user.dialog_state == 1:
-            if input_string == 'F' or input_string == 'NF' or input_string == 'SNF':
+            if input_string == 'Формальный' or input_string == 'Для друзей' or input_string == 'Для братишек':
 
-                if input_string == 'F': user.dialog_style = 1;
-                if input_string == 'NF': user.dialog_style = 2;
-                if input_string == 'SNF': user.dialog_style = 3;
+                if input_string == 'Формальный': user.dialog_style = 1;
+                if input_string == 'Для друзей': user.dialog_style = 2;
+                if input_string == 'Для братишек': user.dialog_style = 3;
                 BotChild_super.send_message_with_keyboard(bot,user,'change is registered', BotChild_super.get_keyboard())
                 BotChild_super.send_message(bot,user,'greet')
                 user.dialog_state = 5
@@ -517,13 +524,13 @@ class BotChild_super:
 
         if user.dialog_state == 5:
             # wait for new route or change style
-            if input_string == 'NW' or input_string == 'CS':
-                if input_string == 'CS':
+            if input_string == 'Построить маршрут' or input_string == 'Сменить стиль диалога':
+                if input_string == 'Сменить стиль диалога':
                     BotChild_super.send_message_with_keyboard(bot,user,'get style', BotChild_super.get_keyboard_for_change_style())
                     user.dialog_state = 1
                     user.save()
                     return
-                if input_string == 'NW':
+                if input_string == 'Построить маршрут':
                     BotChild_super.send_message(bot,user,'ask for route point 1')
                     # self.send_message('change keyboard to new way change style')
                     user.dialog_state = 2
@@ -564,6 +571,323 @@ class BotChild_super:
         # self.logger.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
         bot.send_photo(user.user_telegram_id, open(path, 'rb'))
 
+class BotChild_super:
+    @staticmethod
+    def get_keyboard_for_change_style():
+        keyboard = [
+            ['Формальный'],
+            ['Для друзей'],
+            ['Для братишек', ]
+        ]
+        return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+    @staticmethod
+    def get_keyboard():
+        keyboard = [
+            ['Построить маршрут', 'Посмотреть избранные маршруты'],['Сменить стиль диалога']
+        ]
+        return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+    @staticmethod
+    def get_keyboard_for_fav_mode():
+        keyboard = [
+            ['Создать новый избранный путь', 'Вернуться в режим ожидания']
+        ]
+        return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+    @staticmethod
+    def get_keyboard_for_cancel():
+        keyboard = [
+            ['Отмена']
+        ]
+        return ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+
+    @staticmethod
+    def make_message_from_path(path,user):
+        text = dg(0,user) + path.point1.name + '\n' + dg(1,user) + path.point2.name
+        return text
+
+    @staticmethod
+    def send_fav_paths(bot,user):
+        keyboard = BotChild_super.get_keyboard_for_fav_mode()
+        BotChild_super.send_message_with_keyboard(bot, user, dg(2,user), keyboard)
+
+        # send fav paths
+        #try:
+        paths = HistoryPath.objects.filter(telegram_user_id=user.user_telegram_id)
+        #except Exception as ex:
+        #    print(ex)
+
+        for path in paths:
+            keyboard = [[InlineKeyboardButton("Построить", callback_data=str(str(path.id) + '#^*_1')),
+                         InlineKeyboardButton("Удалить", callback_data=str(str(path.id) + '#^*_0'))]]
+            keyboard = InlineKeyboardMarkup(keyboard)
+            text = BotChild_super.make_message_from_path(path,user)
+            BotChild_super.send_message_with_keyboard(bot, user, text, keyboard)
+
+        user.dialog_state = 6
+        user.save()
+
+    @staticmethod
+    def build_and_send_path(bot,user,wb):
+        keyboard = BotChild_super.get_keyboard()
+        BotChild_super.send_message_with_keyboard(bot, user, dg(3,user),keyboard)
+        user.save()
+
+        path = wb.request_path(user.from_id, user.to_id)
+
+        prev_inst_id = path.connections[0].instance.id
+
+        message = ''
+        for i in range(len(path.points)):
+
+            if i < len(path.connections):
+                message += '\n' + str(path.connections[i].connection_comment)
+                if not path.points[i].hidden:
+                    message += ' ' + path.points[i].name
+                if path.connections[i].trans_instance_marker:
+                    BotChild_super.send_message(bot, user, message)
+                    pic_path = path.floors_obj[prev_inst_id].picture_path
+                    BotChild_super.send_photo(bot, user, pic_path)
+                    message = ''
+                else:
+                    prev_inst_id = path.connections[i].instance.id
+        message += '\n ' + path.points[len(path.points) - 1].name
+        BotChild_super.send_message(bot, user, message)
+        pic_path = path.floors_obj[prev_inst_id].picture_path
+        BotChild_super.send_photo(bot, user, pic_path)
+
+        BotChild_super.send_message(bot, user, dg(4,user))
+        user.dialog_state = 5
+        user.save()
+
+    @staticmethod
+    def get_answer(input_string, user, wb,bot):
+
+
+        logger = logging.getLogger('tmp BotChild')
+        logger.debug('request amswer from bot ')
+        logger.debug('request by string ' + input_string)
+        logger.debug('bot in  state ' + str(user.dialog_state))
+
+        if input_string == 'Построить маршрут' or input_string == 'Сменить стиль диалога' or input_string == 'Посмотреть избранные маршруты':
+            if input_string == 'Сменить стиль диалога':
+                BotChild_super.send_message_with_keyboard(bot,user,dg(5,user), BotChild_super.get_keyboard_for_change_style())
+                user.dialog_state = 1
+                user.save()
+                return
+
+            if input_string == 'Построить маршрут':
+                BotChild_super.send_message(bot,user,dg(6,user))
+                user.dialog_state = 2
+                user.save()
+                return
+            if input_string == 'Посмотреть избранные маршруты':
+                BotChild_super.send_fav_paths(bot,user)
+                #keyboard = BotChild_super.get_keyboard_for_fav_mode()
+                #BotChild_super.send_message_with_keyboard(bot, user, 'enter favorite path mode',keyboard)
+#
+                ##send fav paths
+                #paths = HistoryPath.objects.filter(telegram_user=user)
+                #for path in paths:
+                #    keyboard = [[InlineKeyboardButton("build", callback_data=str(str(path.id) + '#^*_1')),
+                #        InlineKeyboardButton("delete", callback_data=str(str(path.id) + '#^*_0'))]]
+                #    text='From '+path.point1.name+'\n'+'To '+path.point2.name
+                #    BotChild_super.send_message_with_keyboard(bot,user,text,keyboard)
+#
+                #user.dialog_state = 6
+                #user.save()
+                return
+
+        if user.dialog_state == 0:
+            BotChild_super.send_message_with_keyboard(bot,user,dg(5,user), BotChild_super.get_keyboard_for_change_style())
+
+            user.dialog_state = 1
+            user.save()
+
+            return
+
+        if user.dialog_state == 1:
+            if input_string == 'Формальный' or input_string == 'Для друзей' or input_string == 'Для братишек':
+
+                if input_string == 'Формальный': user.dialog_style = 1;
+                if input_string == 'Для друзей': user.dialog_style = 2;
+                if input_string == 'Для братишек': user.dialog_style = 3;
+                BotChild_super.send_message_with_keyboard(bot,user,dg(7,user), BotChild_super.get_keyboard())
+                BotChild_super.send_message(bot,user,dg(8,user))
+                user.dialog_state = 5
+                user.save()
+            else:
+                BotChild_super.send_message(bot,user,dg(9,user))
+            return
+
+        if user.dialog_state == 2:
+            id = Point.get_id(input_string)
+            if id == -1:
+                BotChild_super.send_message(bot,user,dg(10,user))
+            else:
+                user.from_id = id
+                BotChild_super.send_message(bot,user,dg(11,user))
+                BotChild_super.send_message(bot,user,dg(12,user))
+                user.dialog_state = 3
+                user.save()
+            return
+
+        if user.dialog_state == 3:
+            id = Point.get_id(input_string)
+            if id == -1:
+                BotChild_super.send_message(bot,user,dg(10,user))
+            else:
+                user.to_id = id
+                BotChild_super.send_message(bot,user,dg(13,user))
+                user.save()
+                BotChild_super.build_and_send_path(bot,user,wb)
+                #BotChild_super.send_message(bot,user,'wait for route')
+                #user.save()
+#
+                #path = wb.request_path(user.from_id, user.to_id)
+#
+                #prev_inst_id = path.connections[0].instance.id
+#
+                #message = ''
+                #for i in range(len(path.points)):
+#
+                #    if i < len(path.connections):
+                #        message += '\n' + str(path.connections[i].connection_comment)
+                #        if not path.points[i].hidden:
+                #            message += ' ' + path.points[i].name
+                #        if path.connections[i].trans_instance_marker:
+                #            BotChild_super.send_message(bot,user,message)
+                #            pic_path = path.floors_obj[prev_inst_id].picture_path
+                #            BotChild_super.send_photo(bot,user,pic_path)
+                #            message = ''
+                #        else:
+                #            prev_inst_id = path.connections[i].instance.id
+                #message += '\n ' + path.points[len(path.points) - 1].name
+                #BotChild_super.send_message(bot,user,message)
+                #pic_path = path.floors_obj[prev_inst_id].picture_path
+                #BotChild_super.send_photo(bot,user,pic_path)
+#
+                #BotChild_super.send_message(bot,user,'going to wait state')
+                #user.dialog_state = 5
+                #user.save()
+            return
+
+        if user.dialog_state == 5:
+
+#            # wait for new route or change style
+#            if input_string == 'Построить маршрут' or input_string == 'Сменить стиль диалога':
+#                if input_string == 'Сменить стиль диалога':
+#                    BotChild_super.send_message_with_keyboard(bot,user,'get style', BotChild_super.get_keyboard_for_change_style())
+#                    user.dialog_state = 1
+#                    user.save()
+#                    return
+#                if input_string == 'Построить маршрут':
+#                    BotChild_super.send_message(bot,user,'ask for route point 1')
+#                    # self.send_message('change keyboard to new way change style')
+#                    user.dialog_state = 2
+#                    user.save()
+#                    return
+
+            #else:
+            BotChild_super.send_message(bot,user,dg(14,user))
+            return
+
+        if user.dialog_state == 6:
+            if input_string == 'Вернуться в режим ожидания' or input_string == 'Создать новый избранный путь':
+                if input_string == 'Вернуться в режим ожидания':
+                    keyboard=BotChild_super.get_keyboard()
+                    BotChild_super.send_message_with_keyboard(bot, user, dg(4,user),keyboard)
+                    return
+                if input_string == 'Создать новый избранный путь':
+                    keyboard = BotChild_super.get_keyboard_for_cancel()
+                    BotChild_super.send_message_with_keyboard(bot, user,dg(6,user), keyboard)
+                    user.dialog_state = 7
+                    user.save()
+                    return
+
+
+        if user.dialog_state == 7:
+
+            if input_string == 'Отмена':
+                keyboard = BotChild_super.get_keyboard_for_fav_mode()
+                BotChild_super.send_message_with_keyboard(bot, user, dg(17,user), keyboard)
+                BotChild_super.send_fav_paths(bot, user)
+                return
+
+
+
+            id = Point.get_id(input_string)
+            if id == -1:
+                BotChild_super.send_message(bot,user,dg(10,user))
+            else:
+                user.from_id = id
+                BotChild_super.send_message(bot,user,dg(11,user))
+                BotChild_super.send_message(bot,user,dg(12,user))
+                user.dialog_state = 8
+                user.save()
+            return
+
+        if user.dialog_state == 8:
+
+            if input_string == 'Отмена':
+                keyboard = BotChild_super.get_keyboard_for_fav_mode()
+                BotChild_super.send_message_with_keyboard(bot, user, dg(17,user), keyboard)
+                BotChild_super.send_fav_paths(bot, user)
+                return
+
+
+            id = Point.get_id(input_string)
+            if id == -1:
+                BotChild_super.send_message(bot,user,dg(10,user))
+            else:
+                user.to_id = id
+                BotChild_super.send_message(bot,user,dg(13,user))
+                user.save()
+
+                HistoryPath.objects.get_or_create(telegram_user_id=user.user_telegram_id,point1=Point.objects.get(id=user.from_id),point2=Point.objects.get(id=user.to_id))
+                #path = HistoryPath()
+                #path.telegram_user=user
+                ##path.point1=Point.objects.get(id=user.from_id)
+                #path.point2 = Point.objects.get(id=user.to_id)
+                #path.save()
+                keyboard = BotChild_super.get_keyboard_for_fav_mode()
+                BotChild_super.send_message_with_keyboard(bot,user,dg(16,user),keyboard)
+                BotChild_super.send_fav_paths(bot,user)
+
+    @staticmethod
+    def send_message(bot, user, text):
+        # self.logger.debug('bot ' + str(self.bot_id)+' sending text:'+text)
+        bot.sendMessage(chat_id=user.user_telegram_id, text=text, disable_notification=False,
+                        disable_web_page_prewview=True)
+
+    @staticmethod
+    def send_message_clear_keyboard(bot, user, text):
+        # self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
+
+        keyboard = [
+        ]
+        keyboard = ReplyKeyboardMarkup(keyboard, one_time_keyboard=False)
+
+        bot.sendMessage(chat_id=user.user_telegram_id, text=text, reply_markup=keyboard, disable_notification=False,
+                        disable_web_page_prewview=True)
+
+    @staticmethod
+    def send_message_with_keyboard(bot, user, text, keyboard):
+        # self.logger.debug('bot ' + str(self.bot_id) + ' sending text:' + text)
+
+        bot.sendMessage(chat_id=user.user_telegram_id, text=text,
+                        reply_markup=keyboard, disable_notification=False, disable_web_page_prewview=True)
+        # self.telebot.send_message(self.dialog_id,
+        #                          text,keyboard)
+
+    def send_photo(bot, user, path):
+        # self.logger.debug('bot ' + str(self.bot_id) + ' sending photo:' + path)
+        bot.send_photo(user.user_telegram_id, open(path, 'rb'))
+
+
+
 
 print('start')
 master_logger.debug('start')
@@ -592,20 +916,68 @@ from Navigator.models import TelegramUser
 
 
 def command(bot, update):
+
+    styles = Dialogs.objects.filter()
+    for style in styles:
+        style.style2=style.style1
+        style.style3 = style.style1
+        style.save()
+
+
     if update.message.text == '/start':
-        TelegramUser.add_telegram_user(update.message.chat)
-        bot.send_message(text='you are registered:', chat_id=update.message.chat_id, disable_web_page_preview=True)
-        BotChild_super.send_message_with_keyboard(bot, TelegramUser.get_user(update.message.chat), 'get style',
+        user = TelegramUser.add_telegram_user(update.message.chat)
+        bot.send_message(text=dg(18,user), chat_id=update.message.chat_id, disable_web_page_preview=True)
+        BotChild_super.send_message_with_keyboard(bot, TelegramUser.get_user(update.message.chat), dg(5,user),
                                                   BotChild_super.get_keyboard_for_change_style())
 
     else:
-        bot.send_message(text='received uncnown command:' + update.message.text, chat_id=update.message.chat_id,
+        user =TelegramUser()
+        user.dialog_style=1
+        bot.send_message(text=dg(19,user) + update.message.text, chat_id=update.message.chat_id,
                          disable_web_page_preview=True)
 
 
 def error(bot, updater):
     pass  # handle error
 
+def get_data_tuple(query_data):
+    ind = query_data.index('#^*_')
+    data1 = query_data[:ind]
+    data2 = int(query_data[ind + 4:])
+    return data1, data2
+
+def button(bot, update):
+    try:
+        query = update.callback_query
+        query_data_tuple = get_data_tuple(query.data)
+
+        user = TelegramUser.get_user(update.callback_query.message.chat)
+        print(query_data_tuple[1])
+        if query_data_tuple[1] == 0:
+            f_path= HistoryPath.objects.filter(id=query_data_tuple[0])
+            if len(f_path)!=0:
+                text = "Маршрут \n"+BotChild_super.make_message_from_path(f_path[0],user)+'\n '+dg(20,user)
+
+                for del_path in f_path:
+                    del_path.delete()
+
+                BotChild_super.send_message(bot,user,text)
+                BotChild_super.send_fav_paths(bot,user)
+            return
+        if query_data_tuple[1] == 1:
+            f_path = HistoryPath.objects.filter(id=query_data_tuple[0])
+            if len(f_path) != 0:
+                path=f_path[0]
+
+                user.from_id=path.point1.id
+                user.to_id=path.point2.id
+                user.save()
+                BotChild_super.build_and_send_path(bot, user, main_way_builder_instance)
+            else:
+                BotChild_super.send_message(bot, user, 'Fatal eror')
+
+    except Exception as ex:
+        print(ex)
 
 def work_cycle():
     try:
@@ -644,7 +1016,7 @@ dispatcher.add_handler(command_handler)
 # dispatcher.add_error_handler(error)
 dispatcher.add_handler(echo_handler)
 
-# updater.dispatcher.add_handler(CallbackQueryHandler(button)) #for message inline
+updater.dispatcher.add_handler(CallbackQueryHandler(button)) #for message inline
 
 import threading
 
