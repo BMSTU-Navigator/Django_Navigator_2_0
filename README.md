@@ -8,4 +8,5 @@ https://django-navigator.herokuapp.com/
 and wait until it loads
 when the page is loaded yu can write to our bot
 
-
+you dialog with bot must start with /start command
+(only first message)
