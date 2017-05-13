@@ -110,6 +110,7 @@ class TelegramUser(models.Model):
         user.first_name = chat['first_name']
         user.last_name = chat['last_name']
         user.user_telegram_id = chat['id']
+        user.dialog_state=1
         user.save()
         return TelegramUser.objects.get(user_telegram_id=chat['id'])
 
@@ -119,3 +120,9 @@ class TelegramUser(models.Model):
 
     def __str__(self):
         return str(self.username)
+
+
+class HistoryPath(models.Model):
+    point1 = models.ForeignKey(Point, related_name='hpoint1', null=False)  # указатель на поинт 1
+    point2 = models.ForeignKey(Point, related_name='hpoint2', null=False)  # указатель на поит 2
+    telegram_user_id=models.IntegerField(default=-1)
