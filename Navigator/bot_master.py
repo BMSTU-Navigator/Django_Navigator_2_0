@@ -309,7 +309,7 @@ def echo(bot, update):
 def command(bot, update):
     if update.message.text == '/start':
         user = TelegramUser.add_telegram_user(update.message.chat)
-        bot.send_message(text=get_dialog(18, user), chat_id=update.message.chat_id, disable_web_page_preview=True)
+        bot.send_message(text=get_dialog(18, user)+' '+user.username, chat_id=update.message.chat_id, disable_web_page_preview=True)
         BotChild.send_message_with_keyboard(bot, TelegramUser.get_user(update.message.chat), get_dialog(5, user),
                                             BotChild.get_keyboard_for_change_style())
 
