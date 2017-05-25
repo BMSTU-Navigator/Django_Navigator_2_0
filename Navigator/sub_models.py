@@ -1,11 +1,7 @@
 from Navigator.models import *
-
-import ntpath
 import logging
 from shutil import copyfile
 from Navigator.views import *
-#from Navigator.bot_master import logging
-import random
 
 
 class Building:
@@ -63,10 +59,10 @@ class WayBuilderClass:
     key_val = 1
     pre_key = 'tmp_pic'
     pre_path = './pic_dir/tmp_pic_dir/'
-    logger=None
+    logger = None
 
     def __init__(self, building):
-        self.logger=logging.getLogger('WayBuilder')
+        self.logger = logging.getLogger('WayBuilder')
         self.logger.debug('init WB class')
         self.logger.debug('request building')
         self.building = building
@@ -76,7 +72,8 @@ class WayBuilderClass:
 
     def init_pre_count(self):
         for tmp_point in self.building.graph.points:
-            if tmp_point.id >= self.max_id: self.max_id = tmp_point.id
+            if tmp_point.id >= self.max_id:
+                self.max_id = tmp_point.id
         self.max_id += 1
         self.paths = [self.max_id]
         self.dijkstra_weight = []
@@ -86,33 +83,33 @@ class WayBuilderClass:
             self.dijkstra_weight[conection.point1.id][conection.point2.id] = conection.connection_weight
 
     def dijkstra(self, start, stop):
-        self.logger.debug('dekstra start:'+str(start)+' stop:'+str(stop))
+        self.logger.debug('dekstra start:' + str(start) + ' stop:' + str(stop))
         self.dijkstra_connectons = []
         for i in range(0, len(self.dijkstra_weight)):
             self.dijkstra_connectons.append([])
             for j in range(0, len(self.dijkstra_weight[i])):
-                if (self.dijkstra_weight[i][j] < 10000):
+                if self.dijkstra_weight[i][j] < 10000:
                     self.dijkstra_connectons[i].append(j)
 
         print(self.dijkstra_connectons)
         self.logger.debug(self.dijkstra_connectons)
         size = self.max_id
-        INF = 10 ** 10
+        infinity = 10 ** 10
 
-        dist = [INF] * size
+        dist = [infinity] * size
         dist[start] = 0
         prev = [None] * size
         used = [False] * size
         min_dist = 0
         min_vertex = start
-        while min_dist < INF:
+        while min_dist < infinity:
             i = min_vertex
             used[i] = True
             for j in self.dijkstra_connectons[i]:
                 if dist[i] + self.dijkstra_weight[i][j] < dist[j]:
                     dist[j] = dist[i] + self.dijkstra_weight[i][j]
                     prev[j] = i
-            min_dist = INF
+            min_dist = infinity
             for i in range(size):
                 if not used[i] and dist[i] < min_dist:
                     min_dist = dist[i]
@@ -124,14 +121,14 @@ class WayBuilderClass:
             stop = prev[stop]
         self.paths = self.paths[::-1]
 
-        sum = 0
+        sum_weight = 0
         for i in range(0, len(self.paths) - 1):
-            sum += self.dijkstra_weight[self.paths[i]][self.paths[i + 1]]
+            sum_weight += self.dijkstra_weight[self.paths[i]][self.paths[i + 1]]
 
-        return sum
+        return sum_weight
 
     def request_path(self, start, stop):
-        self.logger.debug('start request path start:'+str(start)+' stop:'+str(stop))
+        self.logger.debug('start request path start:' + str(start) + ' stop:' + str(stop))
         weight = self.dijkstra(start, stop)
         print(self.paths)
 
@@ -174,14 +171,12 @@ class WayBuilderClass:
             draw_points_dict_of_sequences[id] = []
 
         for point in path.points:
-            mas =draw_points_dict_of_sequences[point.floor.id]
+            mas = draw_points_dict_of_sequences[point.floor.id]
             mas.append(point)
-            draw_points_dict_of_sequences[point.floor.id]=mas
-            #draw_points_dict_of_sequences[point.floor_index].append(point)
+            draw_points_dict_of_sequences[point.floor.id] = mas
 
         for floor_id in path.floors:
             old_picture_path[floor_id] = Instance.get_instance_path_by_id(floor_id)
-            # head, tail = ntpath.split(old_picture_path[floor_id])
             new_picture_path[floor_id] = self.pre_path + self.pre_key + str(self.key_val) + '.jpg'
             self.key_val += 1
             copyfile(old_picture_path[floor_id], new_picture_path[floor_id])
@@ -191,6 +186,5 @@ class WayBuilderClass:
         for id in floors_set:
             path.floors_obj[id] = Instance.get_instance_by_id(id)
             path.floors_obj[id].picture_path = new_picture_path[id]
-        # copyfile(src, dst)
         self.logger.debug('return path')
         return path
