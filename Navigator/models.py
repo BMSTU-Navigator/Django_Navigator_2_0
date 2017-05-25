@@ -7,7 +7,7 @@ from django.db import models
 
 class Instance(models.Model):
     path = models.CharField(max_length=255, default=None)  #
-
+    inst_name = models.CharField(verbose_name="instance_name",max_length=255, default=None)
     @staticmethod
     def get_instance_path_by_id(id):
         tmp = (Instance.objects.get(id=id)).path
