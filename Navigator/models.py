@@ -7,7 +7,8 @@ from django.db import models
 
 class Instance(models.Model):
     path = models.CharField(max_length=255, default=None)  #
-    inst_name = models.CharField(verbose_name="instance_name",max_length=255, default=None)
+    inst_name = models.CharField(verbose_name="instance_name", max_length=255, default=None)
+
     @staticmethod
     def get_instance_path_by_id(id):
         tmp = (Instance.objects.get(id=id)).path
@@ -19,6 +20,7 @@ class Instance(models.Model):
 
     def __str__(self):
         return self.id
+
 
 """поинт - место на карте (кабинет, лвход на лестницу итд)"""
 
@@ -33,11 +35,13 @@ class Point(models.Model):
 
     def __str__(self):
         return self.name
+
     @staticmethod
     def get_id(string):
         try:
             return (Point.objects.get(name=string)).id
         except Exception as ex:
+            print(ex)
             return -1
 
 
@@ -57,8 +61,9 @@ class GraphConnection(models.Model):
     instance = models.ForeignKey(Instance, null=True)  # указатель на инстанс если соединение внутри одного инстанса
     trans_instance_marker = models.BooleanField(
         default=False)  # маркер того что поинты входящие в соединение находятся в разных инстансах
+
     def __str__(self):
-        return 'pint1='+str(self.point1.id)+' point2='+str(self.point2.id)
+        return 'pint1=' + str(self.point1.id) + ' point2=' + str(self.point2.id)
 
 """ таблица диалогов с тремя стилями
 1й стиль - официальный
@@ -70,7 +75,6 @@ class GraphConnection(models.Model):
 2й стиль - привет
 3й стиль - здарова братуха
 """
-
 
 class Dialogs(models.Model):  #
     style1 = models.CharField(max_length=255, default=None)  #
@@ -84,14 +88,7 @@ class Dialogs(models.Model):  #
         if style == 3: return Dialogs.objects.get(id=id).style3
 
     def __str__(self):
-        return 'style1='+str(self.style1)
-        # Instance.create_table(True)
-        # Point.create_table(True)
-        # GraphConnection.create_table(True)
-        # Dialogs.create_table(True)
-
-        # grandma = Person.select().where(Person.name == 'Grandma L.').get()
-
+        return 'style1=' + str(self.style1)
 
 
 class TelegramUser(models.Model):
@@ -99,10 +96,11 @@ class TelegramUser(models.Model):
     first_name = models.TextField(verbose_name='first_name', default="")
     last_name = models.TextField(verbose_name='last_name', default="")
     user_telegram_id = models.BigIntegerField(verbose_name='id', primary_key=True)
-    dialog_state=models.IntegerField(verbose_name='dialog_state',default=0)
-    dialog_style=models.IntegerField(default=1)
-    from_id=models.IntegerField(default=-1)
-    to_id=models.IntegerField(default=-1)
+    dialog_state = models.IntegerField(verbose_name='dialog_state', default=0)
+    dialog_style = models.IntegerField(default=1)
+    from_id = models.IntegerField(default=-1)
+    to_id = models.IntegerField(default=-1)
+
     @staticmethod
     def add_telegram_user(chat):
         user = TelegramUser()
@@ -110,7 +108,7 @@ class TelegramUser(models.Model):
         user.first_name = chat['first_name']
         user.last_name = chat['last_name']
         user.user_telegram_id = chat['id']
-        user.dialog_state=1
+        user.dialog_state = 1
         user.save()
         return TelegramUser.objects.get(user_telegram_id=chat['id'])
 
@@ -125,4 +123,4 @@ class TelegramUser(models.Model):
 class HistoryPath(models.Model):
     point1 = models.ForeignKey(Point, related_name='hpoint1', null=False)  # указатель на поинт 1
     point2 = models.ForeignKey(Point, related_name='hpoint2', null=False)  # указатель на поит 2
-    telegram_user_id=models.IntegerField(default=-1)
+    telegram_user_id = models.IntegerField(default=-1)
