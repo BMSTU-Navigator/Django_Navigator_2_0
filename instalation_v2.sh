@@ -4,7 +4,7 @@ echo "cd django dir"
 
 cd ./Django_Navigator_2_0
 echo "pull from git"
-git pull
+`git pull`
 echo "run django"
 
-python3 manage.py runserver localhost:8000
+`python3 manage.py runserver localhost:8000`
