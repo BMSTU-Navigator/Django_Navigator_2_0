@@ -1,5 +1,5 @@
 python-telegram-bot==5.3.0
-Django==1.10.6
+Django==1.11.28
 gunicorn==19.6.0
 dj-database-url==0.4.1
 psycopg2==2.6.2
